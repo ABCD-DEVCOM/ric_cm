@@ -1,0 +1,10 @@
+if p(v258^a) then 
+	' - [ Degré : ', v258^a  
+		if p(v258^b) then '. Date : ', v258^b fi, 
+		if p(v258^c) then '. Description : ', v258^c fi, 
+		if p(v258^d) then '. Identifiant : ', v258^d fi, 
+		if p(v258^e) then '. Source : ', v258^e fi, 
+		if p(v258^f) then '. Lieu : ', v258^f fi, 
+	']', 
+	fi, 
+

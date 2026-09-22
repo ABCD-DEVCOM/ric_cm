@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>ABCD - RiC-CM database help file - tag 110</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<section>
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-A10</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b> Content Type </b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>The fundamental form of communication in which a record resource is expressed<td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Domain</b></td>
+		<td>Record Resource  </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Specifications</b></td>
+		<td> 
+</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Extensibility</b></td>
+		<td>May be extended with any number of specific attributes.  </td>
+	</tr>
+ 	<tr>
+		<td bgcolor=#bdc3c7><b>Repeatability</b></td>
+		<td>Repeatable   </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Value schema</b></td>
+		<td>Controlled value  </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope</b></td>
+		<td>May be used in a record set description when the attribute value is shared by some or all 
+		members of the record set. <p>The attribute should not be confused with the representation type or carrier 
+		type attributes of a related instantiation since the form of communication can be independent of the representation 
+		or carrier, for example a map (content type "cartographic image") may be represented as a sketch (representation type "visual")
+		recorded as a physical document (carrier type "paper"). It also should not be confused with the documentary form 
+		type attribute of a record set, record, or record part, which describes a specific document form (for example a deed of sale).    </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>cartographic image [en] <br>notated music [en]<br> recorded spoken word [en]<br> still image [en]<br> text [en]     </td>
+	</tr>
+</table>
+</section>
+
+
+<section>
+<h2><p align=center>The proposed pick-list elements are extracted from the <a href=a href=https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-contenu/> Type de contenu</a> element of <a href=https://code.rdafr.fr>Code RDA-FR</a></h2>
+</section>
+
+<section>
+<table border>
+<tbody>
+<tr>
+<td>
+<p><a id="Image_animée" data-tc-id="w-0.53853018074184"></a><br><b> image animée </b></p>
+</td>
+<td>
+<p>Contenu exprimé au moyen d’images destinées à être perçues comme animées en deux dimensions.</p>
+<p>Comprend les films cinématographiques (avec prise de vue directe et/ou animation), les enregistrements sur film ou vidéo de spectacles, d’événements, etc., différents de ceux devant être perçus en trois dimensions (voir 
+<em>image animée 3D</em>). Les images animées peuvent ou non être accompagnées de son.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><br><b> image animée 3D </b></p>
+</td>
+<td>
+<p>Contenu exprimé au moyen d’images destinées à être perçues comme animées en donnant l’illusion de trois dimensions.</p>
+<p>Comprend les films en 3D (avec prise de vue en direct et/ou animation), les hologrammes animés, etc. Les images animées 3D peuvent ou non être accompagnées de son.</p>
+</td>
+</tr>
+<tr>
+<td>
+<b> image cartographique </b></p>
+</td>
+<td>
+<p>Contenu cartographique exprimé au moyen de lignes, contours, estompage, etc. destinés à être perçus visuellement en deux dimensions.</p>
+<p>Comprend les cartes, les plans, les atlas, les images de télédétection, etc.</p>
+</td>
+</tr>
+<tr>
+<td><b> image cartographique animée </b></p>
+</td>
+<td>
+<p>Contenu cartographique exprimé au moyen d’images destinées à être perçues comme animées en deux dimensions.</p>
+<p>Comprend notamment les images satellite de la Terre ou d’autres corps célestes en mouvement, la visualisation d’un zoom géographique sur un espace donné ou la visualisation chronologique ou thématique de l’évolution d’un espace géographique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> image cartographique tactile </b></p>
+</td>
+<td>
+<p>Contenu d’une image cartographique exprimé au moyen de lignes, contours et/ou d’autres formes destinés à être perçus au toucher comme une image cartographique en deux dimensions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>image fixe </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de lignes, contours, estompage, etc. destinés à être perçus visuellement en deux dimensions. Comprend les estampes, les affiches, les dessins, les peintures, les diagrammes, les photographies, etc.</p>
+<p>Dans le cas d’un contenu cartographique devant être perçu comme une image en deux dimensions, voir <em>image cartographique</em>.</p>
+<p>Dans le cas d’images devant être perçues en trois dimensions, voir <em>image fixe 3D</em>.</p>
+<p>Dans le cas d’images devant être perçues au toucher, voir 
+<em>image fixe tactile</em>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> image fixe 3D </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de lignes, contours, estompage, etc. destinés à être perçus visuellement en donnant l’illusion de trois dimensions.</p>
+<p>Comprend les hologrammes non animés, les images numériques en 3D, les images destinées à être vues en relief (vues stéréoscopiques, vues d’optique, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> image fixe en pop-up </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de lignes, contours, estompage, etc., destiné à être perçu visuellement et découpé de façon à se déployer en relief ou être rendu mobile lors de la manipulation grâce à divers éléments (tirettes, volets, pliages, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> image fixe tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu d’une image fixe exprimé au moyen de lignes, contours et/ou d’autres formes destinés à être perçus au toucher.</p>
+</td>
+</tr>
+<tr>
+<td><b> jeu de données cartographiques </b></p>
+</td>
+<td>
+<p>Contenu cartographique exprimé au moyen de données encodées numériquement, en vue d’une interrogation ou d’un retraitement par ordinateur.</p>
+<p>Comprend notamment :</p>
+<p>les données spécifiques aux systèmes d’information géographiques (SIG), qui permettent de créer, d’organiser et de présenter des données spatialement référencées (ou géo référencées), mais aussi de produire des plans et des cartes ;</p>
+<p>les données destinées à produire des cartes interactives.</p>
+<p>Pour les systèmes d’information géographiques (SIG) eux-mêmes et les programmes adaptés aux cartes interactives, voir programme informatique.</p>
+<p>Dans le cas de données cartographiques devant être perçues sous la forme d’image ou de forme tridimensionnelle, voir <em>image cartographique</em><em>, </em><em>image cartographique animée</em><em>, </em><em>image cartographique tactile</em><em>, </em><em>objet cartographique</em> et <em>objet cartographique tactile</em><em>.</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> jeu de données informatiques </b></p>
+</td>
+<td>
+<p>Contenu exprimé au moyen de données encodées numériquement, en vue d’une interrogation ou d’un retraitement par ordinateur.</p>
+<p>Comprend notamment les bases de données relationnelles, les données scientifiques utilisées par des logiciels d’application pour effectuer des calculs ou bien utilisées pour produire des modèles, etc.</p>
+<p>Pour les logiciels permettant d’exploiter ces données, voir programme informatique.</p>
+<p>Dans le cas de jeux de données informatiques encodant un contenu cartographique, voir <em>jeu de données cartographiques</em>.</p>
+<p>Dans le cas de données devant être perçues visuellement sous la forme de notation, d’image ou de forme tridimensionnelle, voir <em>image animée</em><em>, </em><em>image animée</em> <em>3D</em></a><em>, </em><em>image fixe</em><em>, </em><em>mouvement noté</em><em>, </em><em>musique notée</em><em>, </em><em>objet</em> et <em>texte</em><em>.</em></p>
+<p>Dans le cas de données devant être perçues par l’ouïe, voir <em>musique exécutée</em><em>, </em><em>parole énoncée</em> et <em>sons</em><em>.</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> mouvement noté </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen d’une forme de notation du mouvement destinée à être perçue visuellement.</p>
+<p>Comprend toutes les formes de notation du mouvement différentes de celles devant être perçues au toucher (voir <em>mouvement noté tactile</em>).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> mouvement noté tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu de mouvement noté exprimé au moyen d’une forme de notation du mouvement destinée à être perçue au toucher.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b><br>multimédia </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé sous une forme intégrant des données numériques de toute nature (son, jeu de données, textes, images fixes ou animées, etc.) et conçue pour une consultation interactive.</p>
+<p>Comprend notamment les jeux vidéo en 2D.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> multimédia 3D </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé sous une forme intégrant des données numériques de toute nature (son, jeu de données, textes, images fixes ou animées, etc. donnant l’illusion de trois dimensions) et conçue pour une consultation interactive.</p>
+<p>Comprend notamment les jeux vidéo en 3D et la réalité virtuelle.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> musique exécutée </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de notes ordonnées ou de sons successifs, combinés entre eux ou reliés dans le temps pour produire une composition, et sous une forme destinée à être perçue par l’ouïe.</p>
+<p>Comprend les exécutions de musique enregistrées, la musique créée par ordinateur, mécaniquement, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> musique notée </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de notes ordonnées ou de sons successifs, combinés entre eux ou reliés dans le temps pour produire une composition, et sous une forme de notation de la musique destinée à être perçue visuellement.</p>
+<p>Comprend toutes les formes de notation de la musique différentes de celles devant être perçues au toucher (voir <em>musique notée tactile</em>).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b> musique notée tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu de musique notée exprimé au moyen d’une forme de notation destinée à être perçue au toucher.</p>
+<p>Comprend la musique en braille et les autres formes tactiles de notation musicale.</p>
+</td>
+</tr>
+<tr>
+<td>
+<b>objet</b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen d’une ou de plusieurs formes tridimensionnelles destinées à être perçues visuellement. Comprend les sculptures, les maquettes, les monnaies, les jeux, les appareils, les éléments d’impression, etc.</p>
+<p>Dans le cas d’un contenu cartographique devant être perçu comme une forme tridimensionnelle, voir <em>objet cartographique</em>.</p>
+<p>Dans le cas de formes tridimensionnelles devant être perçues au toucher, voir <em>objet tactile</em>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<b> objet cartographique </b></p>
+</td>
+<td colspan="2">
+<p>Contenu cartographique exprimé au moyen d’une ou de plusieurs formes tridimensionnelles destinées à être perçues visuellement.</p>
+<p>Comprend : les globes, les modèles en relief, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<b> objet cartographique tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu d’un objet cartographique exprimé au moyen de lignes, contours et/ou d’autres formes destinés à être perçus au toucher.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><br><b> objet tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu d’un objet exprimé au moyen d’une ou de plusieurs formes tridimensionnelles destinées à être perçues au toucher.</p>
+</td>
+</tr>
+<tr>
+<td>
+<b> parole énoncée </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen du langage sous une forme destinée à être perçue par l’ouïe.</p>
+<p>Comprend les lectures enregistrées, les textes récités, les discours, les entretiens, les récits oraux, etc., la parole créée par ordinateur, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<br><b> programme informatique </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen d’instructions encodées numériquement, en vue d’un traitement et d’une exécution par ordinateur.</p>
+<p>Comprend les systèmes d’exploitation, les logiciels d’application, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><br><b> sons </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen de sons, autres que les sons du langage ou les sons musicaux, sous une forme destinée à être perçue par l’ouïe.</p>
+<p>Comprend les enregistrements des sons naturels, des sons artificiellement produits comme les bruitages, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><br><b> texte noté </b></p>
+</td>
+<td colspan="2">
+<p>Contenu exprimé au moyen d’une forme de notation du langage destinée à être perçue visuellement.</p>
+<p>Comprend toutes les formes de notation du langage différentes de celles devant être perçues au toucher (voir <em>texte tactile</em>).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b><br>texte tactile </b></p>
+</td>
+<td colspan="2">
+<p>Contenu textuel exprimé au moyen d’une forme de notation du langage destinée à être perçue au toucher.</p>
+<p>Comprend les textes en braille et les autres formes tactiles de notation du langage.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</section>
+</body>
+</html>

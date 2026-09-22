@@ -1,0 +1,17 @@
+if mfn=1 then
+	'<table border=1 width=100%>'
+		'<tbody style="font-family:arial;font-size:smaller;vertical-align:top" >'
+		'<tr>
+			<th width=20%>Type of data</th>
+			<td>English</td>
+			<td>Español</td>
+			<td>Français</td>
+		</tr>'
+fi 
+		'<tr>'
+			'<th width=20%>', if mfn<=22 then 'Entity' else if mfn > 100 and mfn <=145 then 'Attribute'  else if mfn > 145 and mfn <=286 then 'Relation ', f(mfn-200, 1, 0), ' and inverse'  fi fi, fi '</th>'
+			'<td>', v1, '<br>', v11, '</td>'
+			'<td>'v2, '<br>', v12, '</td>'
+			'<td>'v3, '<br>', v13, '</td>'
+			 
+		'</tr>'

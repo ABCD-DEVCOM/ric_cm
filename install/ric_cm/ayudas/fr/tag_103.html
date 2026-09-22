@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ABCD - RiC-CM database help file - tag 103</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<section>
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-A03</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Authenticity note</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Description of the evidence that a record resource or an instantiation is what it 
+purports to be, was created or sent by the said agent at the said time, and has not 
+been tampered with, corrupted, or forged.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Domain</b></td>
+		<td>Record Resource; Instantiation</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Specifications</b></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Extensibility</b></td>
+		<td>May be extended with any number of specific attributes.</td>
+	</tr>
+ 	<tr>
+		<td bgcolor=#bdc3c7><b>Repeatability</b></td>
+		<td>Not repeatable</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Value schema</b></td>
+		<td>Model-based text; free text</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope</b></td>
+		<td>May be used in a record set description when the attribute value is shared by some or 
+all members of the record set. 
+        <p>For digital records, it may include results from automated means of checking the 
+validity of signatures and timestamp. </p>
+    <p>In particular cases it may be contextually related to the state attribute, for example, a 
+document can be an original or a copy, either of which can be authentic or a forgery.</p></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td> The letter is unsigned. [en] 
+<p>The deed is digitally signed by the Notary. The electronic signature validity cannot be 
+assessed, but the content was not modified from the moment of signing. [en]</p> 
+<p>The timestamp exists but cannot be verified. [en]</p>
+<p>The record bears signatures. [en]</p>
+</td>
+	</tr>
+</table>
+</section>
+</body>
+</html>
+ 
+

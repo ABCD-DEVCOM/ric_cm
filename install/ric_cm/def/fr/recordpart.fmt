@@ -1,0 +1,231 @@
+TAB||Information locale|0|0||||||||||||0||0|0|||
+F|1|Type de chose|0|0|||S|||P|ric_typeofthing.tab|||||1||1|0|||
+F|2|ID de chose|0|1|||RO||30|||||||1||1|0|||
+F|20|Dates et opérateurs|0|1|||OD|20|20|||||||1||1|0|||
+TAB||Attribut de l'entité|0|0||||||||||||0||0|0|||
+F|143|RiC-A43 Description générale|0|0|||X|4|80|||||||1||0|0|||
+T|122|RiC-A22 Identifiant|0|1|iescu||X|3|80|||||||1||0|0|||
+S||Identifiant|0|0|i||X|||||||||1||0|0|||
+S||Explication|0|0|e||X|||||||||0||0|0|||
+S||Organisation source|0|0|s||X|||||||||0||0|0|||
+S||Pays|0|0|c||X|||P|ric_a22c.tab|||||0||0|0|||
+S||URL|0|0|u||R|||P|ric_a22u.tab|||||0||0|0|||
+T|128|RiC-A28 Nom|0|1|flo||X|2|80|||||||1||0|0|||
+S||Prénoms (Personne)|0|0|f||X|||||||||0||0|0|||
+S||Nom de famille (Personne)|0|0|l||X|||||||||0||0|0|||
+S||Nom d'une autre entité|0|0|o||X|||||||||0||0|0|||
+F|103|RiC-A03 Note sur l'authenticité|0|0|||X|1|60|||||||1||1|0|||
+F|107|RiC-A07 Classification|0|1|||X|3|80|||||||1||0|0|||
+F|108|RiC-A08 Conditions d'accès|0|0|||X|1|60|||||||1||0|0|||
+F|109|RiC-A09 Conditions d'utilisation|0|0|||X|1|60|||||||1||0|0|||
+F|110|RiC-A10 Type de contenu|0|1|||COMBO|5|30|P|ric_a10.tab|||||1||0|0|||
+F|121|RiC-A21 Histoire|0|0|||X|5|80|||||||1||0|0|||
+F|124|RiC-A24 Note sur l'intégrité|0|1|||X|1|60|||||||1||0|0|||
+F|125|RiC-A25 Langue|0|1|||COMBORO|4|20|P|ric_a25.tab|||||1||0|0|||
+F|126|RiC-A26 Statut légal|0|1|||COMBORO|4|40|P|ric_a26.tab|||||1||0|0|||
+F|135|RiC-A35 Mesure d'une ressource archivistique|0|1|||X|1|80|||||||1||0|0|||
+F|138|RiC-A38 Portée et contenu|0|0|||X|1|80|||||||1||0|0|||
+F|139|RiC-A39 Etat|0|0|||S|||P|ric_a39.tab|||||1||0|0|||
+F|140|RiC-A40 Structure|0|0|||X|2|80|||||||1||0|0|||
+F|117|RiC-A17 Type de document|0|1|||COMBO|5|40|P|ric_a17.tab|||||1||0|0|||
+TAB||Relations de l'entité|0|0||||||||||||0||0|0|||
+T|201|RiC-R001 est relié à|0|1|1abcdef||RO|2|50|||||||1||0|0|||
+S||Est relié à|0|0|1||X|||D|ric_cm|R501_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|202|RiC-R002 a ou a eu pour partie|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A ou a eu pour partie|0|0|1||X|||D|ric_cm|R502_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|203|RiC-R003 a ou a eu pour constituant|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A ou a eu pour constituant|0|0|1||X|||D|ric_cm|R503_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|208|RiC-R008 précède ou a précédé|0|1|1abcdef||RO|2|50|||||||1||0|0|||
+S||Précède ou a précédé|0|0|1||X|||D|ric_cm|R508_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|209|RiC-R009 précède dans le temps|0|1|1abcdef||RO|2|50|||||||1||0|0|||
+S||Précède dans le temps|0|0|1||X|||D|ric_cm|R509_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|210|RiC-R010 est l'original de|0|1|1abcdef||RO|2|50|||||||1||0|0|||
+S||Est l'original de|0|0|1||X|||D|ric_cm|R510_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|211|RiC-R011 est l'ébauche de|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Est l'ébauche de|0|0|1||X|||D|ric_cm|R511_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|212|RiC-R012 a pour copie|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour copie|0|0|1||X|||D|ric_cm|R512_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|213|RiC-R013 a pour réponse|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour réponse|0|0|1||X|||D|ric_cm|R513_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|219|RiC-R019 a ou a eu pour sujet|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A ou a eu pour sujet|0|0|1||X|||D|ric_cm|R519_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|220|RiC-R020 a ou a eu pour sujet principal|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A ou a eu pour sujet principal|0|0|1||X|||D|ric_cm|R520_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|221|RiC-R021 décrit ou a décrit|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Décrit ou a décrit|0|0|1||X|||D|ric_cm|R521_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|222|RiC-R022 est une ressource archivistique associée avec la ressource archivistique|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Est une ressource archivistique associée avec la ressource archivistique|0|0|1||X|||D|ric_cm|R522_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|223|RiC-R023 a une relation génétique avec la ressource archivistique|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A une relation génétique avec la ressource archivistique|0|0|1||X|||D|ric_cm|R523_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|224|RiC-R024 inclut ou a inclus|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Inclut ou a inclus|0|0|1||X|||D|ric_cm|R524_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|225|RiC-R025 a ou a eu pour instanciation|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A ou a eu pour instanciation|0|0|1||X|||D|ric_cm|R525_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|226|RiC-R026 a pour provenance organique|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour provenance organique|0|0|1||X|||D|ric_cm|R526_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|227|RiC-R027 a pour créateur|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour créateur|0|0|1||X|||D|ric_cm|R527_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|228|RiC-R028 est accumulé par|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Est accumulé par|0|0|1||X|||D|ric_cm|R528_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|229|RiC-R029 est reçu par|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Est reçu par|0|0|1||X|||D|ric_cm|R529_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|230|RiC-R030 est collecté par|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Est collecté par|0|0|1||X|||D|ric_cm|R530_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|231|RiC-R031 a pour expéditeur|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour expéditeur|0|0|1||X|||D|ric_cm|R531_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|232|RiC-R032 a pour destinataire|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour destinataire|0|0|1||X|||D|ric_cm|R532_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|233|RiC-R033 documente|0|1|1abcdef||RO|2|50|||||||1||1|0|||
+S||Documente|0|0|1||X|||D|ric_cm|R533_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||
+T|279|RiC-R079 a pour responsable intellectuel|0|0|1abcdef||RO|2|50|||||||1||1|0|||
+S||A pour responsable intellectuel|0|0|1||X|||D|ric_cm|R579_|@ric_selection.pft|||0||0|0|||
+S||RiC-RA01 Degré de certitude de la relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date de la relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description de la relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifiant de la relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source de la relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Lieu de la relation|0|0|f||X|||||||||0||0|0|||

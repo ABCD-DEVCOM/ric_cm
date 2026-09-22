@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ABCD - RiC-CM database help file - tag 001</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+ 
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu en 5 colonnes x 3 lignes -->
+  <div class="tab-bar-container">
+    <nav class="tab-grid">
+      <!-- Ligne 1 -->
+      <a href="#RiC-E03">RiC-E03 Record set</a>
+      <a href="#RiC-E04">RiC-E04 Record</a>
+      <a href="#RiC-E05">RiC-E05 Record part</a>
+      <a href="#RiC-E06">RiC-E06 Instantiation</a>
+      <a href="#RiC-E08">RiC-E08 Person</a>
+
+      <!-- Ligne 2 -->
+      <a href="#RiC-E10">RiC-E10 Family</a>
+      <a href="#RiC-E11">RiC-E11 Coporate Body</a>
+      <a href="#RiC-E12">RiC-E12 Position</a>
+      <a href="#RiC-E13">RiC-E13 Mechanism</a>
+      <a href="#RiC-E14">RiC-E14 Event</a>
+
+      <!-- Ligne 3 -->
+      <a href="#RiC-E15">RiC-E15 Activity</a>
+      <a href="#RiC-E16">RiC-E16 Rule</a>
+      <a href="#RiC-E17">RiC-E17 Mandate</a>
+      <a href="#RiC-E18">RiC-E18 Date</a>
+      <a href="#RiC-E19">RiC-E22 Place</a>
+    </nav>
+  </div>
+
+  <!-- Sections associées -->
+  <section id="RiC-E03">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E03</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Record Set</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>One or more records that are grouped together by an Agent based on the records sharing one or more attributes or relations.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<p><td><i>Record set</i> is a kind of <b>Record Resource (RiC-E02).</b></p> 
+		<p>The member records in a Record Set may physically reside together, though physical proximity is not essential.</p>
+		<p>In a particular context, an Agent (for example, administrator, records manager, archivist, end-user, etc.) may select the member records of a Record Set based on any shared attribute or attributes, or any shared relation or relations. The grouping of the records serves a purpose or purposes specific to the context of the Agent. </p>
+		<p>For example, all member records of a Record Set have been accumulated by the same Agent; have the same Documentary Form Type; or are related to and document the same Activity.</p>
+		<p>A Record Set may represent the act of classifying the records in accordance with a formal classification scheme that may be based on activity, subject, organizational structure, or other criteria; an act of archival arrangement (for example, based on common provenance); or some other selection and grouping that fulfils a particular purpose or purposes (for example, a classification that reflects or supports the purposes of a researcher). </p>
+		<p>By exception, some records are brought together based on their not belonging in the context of selection to other designated groups: a 'Miscellaneous' series, for example. </p>
+		<p>A Record Sset accumulated by an Agent in the course of life or work activity should be described in a manner that preserves context and evidential value. </p>
+		<p>Record Sets may also contain other Record Sets. A Record Set or Record may simultaneously be a member of more than one Record Set, and over the course of its existence, a Record Set or Record may be a member of an indeterminate number of Record Sets in an indeterminate number of contexts. </p>
+		Record Sets and Records contained within a Record Set may be ordered into a sequence based on a common property or relation, or common properties or relations (for example, alphabetical by agent or related place); chronological order by creation date; or some other criterion (for example, an imposed order by relevance)</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+		Cotton Manuscripts Collection [en] <br>
+Miscellaneous papers and fragments [en] <br>
+Papers of the Earls of Liverpool [en] <br>
+Official correspondence of the 1st Earl of Liverpool [en] <br>
+Registros de Hospedaria de Imigrantes da Ilha das Flores [pt] <br>
+Livro de registro de entrada de imigrantes na Hospedaria de Imigrantes da Ilha das <br>
+Flores [pt]
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>  </section>
+
+  <section id="RiC-E04">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E04</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Record</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td> Discrete information content formed and inscribed, at least once, by any method on
+any carrier in any persistent, recoverable form by an agent in the course of life or
+work activity.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Record is a kind of <b>Record Resource (RiC-E02).</b> </p>
+			<p>A record may itself contain one or more records, or may consist of one or more record parts.</p>
+			<p>A record must have or have had at least one instantiation. A record may have more than one instantiation.</p>
+			<p>An instantiation derived from another instantiation of a record may be considered the instantiation of the same record or an instantiation of a new record, depending on the context.</p>
+			<p>A record may serve a variety of purposes, though it always documents or is evidence of activity.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			<p>Deed appointing John Bambridge, Sheriff of Leicestershire, with 3rd Great Seal of Charles I appended [en]</p>
+			<p>Sketch Map of the Qatar Peninsula [en]</p>
+			<p>Email message concerning an agreement to participate in the ICA Seoul Congress (2016) containing two attachments and digitally signed [en]</p>
+			<p>Registro de entrada de Jacob Schwarz, trabalhador alemão, procedente de Antuérpia pelo navio Graf Bismark, na Hospedaria de Imigrantes da Ilha das Flores, e de sua saída para Porto Alegre [pt]</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E05">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E05</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Record part</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			Component of a record with independent information content that contributes to the intellectual completeness of the record.
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Record part is a kind of <b>Record Resource (RiC-E02).</b></p>
+			<p>A record part may itself have record parts.</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			<p>A record part may itself have record parts.</p>
+			<p>Attachment to email message concerning an agreement to participate in the ICA Seoul Congress (2016) [en]</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E06">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E06</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Instantiation</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td> The inscription of information made by an agent on a carrier in any persistent, recoverable form as a means of communicating information through time and space. </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Instantiation is a kind of <b>Thing (RiC-E01).</b></p>
+			<p>A record or record part must have been instantiated at least once, though this
+instantiation may no longer exist at the time of description, when, for example,
+evidence of its existence is present in an extant record. An instantiation might also
+exist at the time of description but be destroyed at a later time when, for example, a
+derived instantiation might become the only remaining instantiation.</p>
+
+		<p>A record set may have an instantiation, which is to say that it is not a necessary condition.</p>
+<p>An instantiation may be derived from another instantiation</p>
+
+<p>A record resource may have multiple instantiations simultaneously or over time. For
+example, a record printed and saved at the same time as both DOCX and PDF/A
+would have three concurrent instantiations, or an original record may be copied
+following its initial instantiation.</p>
+
+<p>Depending on the context, a new instantiation may represent a new record resource
+or the same record resource. Relative to the technique employed in deriving an
+instantiation from an existing instantiation, characteristics of the source instantiation
+may be lost or altered. Whether the derived instantiation is an instantiation of the
+same record resource or, because of loss or changes in characteristics, is an
+instantiation of a new record resource must be determined within the context by the
+agent that produces or uses that instantiation. For instance, a postcard representing
+a town map from 1874 (instantiation 1) is digitized and kept as a JPEG file
+(instantiation 2). The digital copy may be considered as instantiating the same record
+by an agent considering the information transmitted by the record (for example, the
+urban landscape displayed), but as a new record by an antiquarian more focused on
+the materiality of the carrier.</p>
+
+<p>Successive instantiations may change the perceivable boundaries of a record
+resource. For instance, a case file comprising many records may be digitized and
+saved as one single PDF file, which, from a management perspective, may be treated
+as one record. Similarly, a large record set (for example, a fonds or a series) may be
+maintained as one database. On the other hand, one record (main document and its
+annexes) may be digitized in separate files and each one may be managed as a
+discrete "physical" item.</p>
+
+<p>Instantiations may require mediation to communicate the information in the record
+resource. While a traditional record on paper can simply be read by an agent in order
+to understand the information, a vinyl recording, a video cassette or a digital file
+needs a device (mediator) to codify or decodify the information conveyed. This
+mediator may imply simple physical components (a turntable, for example), or a
+complex constellation of software and hardware elements.</p>
+
+<p>Instantiations are more than the mere informational content of record resource and
+may be the focus of preservation and physical management of records. The use of
+particular document types for records, such as a medieval charter, may have
+implications for the authenticity of the records. Hence, the way a record resource is
+instantiated contributes to the contextualizing of the content.</p>
+
+Distinguishing the message conveyed (record resource) and its representations
+(instantiations) allows for the efficient management of their descriptions, and
+preservation of information about a record resource even when no instantiation of it
+exists or is known to exist. The relations between distinct instantiations can then be
+expressed wherever they coexist, and they can be related to the record resource they
+instantiate.
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			<p>Cópia digital de livro de registro de entrada de imigrantes na Hospedaria da Ilha das
+Flores em formato pdf [pt] [digital instantiation of a record]</p>
+<p>Record: 1521, June 29 — The merchant Neacsu writes to Johannes Benkner, mayor of
+Brasov, about the movement of Ottoman army in South Danube [en]</p>
+<p>Instantiation 1: 1950 — b/w photocopy of the letter [en]</p>
+<p>Instantiation 2: 2016 — colour digital copy of the letter [en]</p>
+<p>Wax seal carrying an impression of the 3rd Great Seal of King Charles I [en] [analogue
+instantiation of record part]</p>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+
+  <section id="RiC-E08">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E08</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Person</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			An individual human being.
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Person is a kind of <b>Agent (RiC-E07).</b></p>
+			<p>Most commonly, a human being (biological person) has a single socially constructed
+identity or persona.</p>
+<p>Less common though not rare, one or more personae in addition to the original persona
+which emerges at or near birth may be associated with the human being over the course
+of that human being’s lifetime. Such "alternative personae" are most often created by
+the original person for specific purposes. The original persona may, in everyday
+discourse, be regarded as "the real person".</p>
+<p>Under some circumstances, an alternative persona might eclipse or replace the original
+person (Mark Twain eclipsing Samuel Clemens; John Wayne eclipsing Marion Mitchell
+Morrison), that is, the alternative identity becomes the predominant identity.</p>
+<p>Less common is when two or more persons collaborate to create a shared persona. A
+persona shared by two or more persons constitutes a kind of group.</p>
+<p>Within the archival context, the description of a person commonly will focus on the
+original associated persona, with alternative personae noted. Exceptionally, an
+alternative persona may displace the original persona as the focus of the description.</p>
+
+<p>Under some circumstances, for example, when record resources are associated with two
+or more different personae of one person, describing the different personae as separate
+though related persons may be desirable.</p>
+<p>Alternatively, a person may change their identity over the course of their lifetime. </p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			<p>Nelson Mandela [activist, politician]</p>
+			<p>Jean Harlow [actress]</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+
+  <section id="RiC-E10">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E10</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Family</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			<p>Two or more agents that act together as an agent.</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Group is a kind of <b>Agent (RiC-E07).</b></p>
+			<p>A group has a socially recognized identity. Each member of the group plays a particular
+role or roles (that is, has a particular position) in the coordinated activity of the group.</p>
+			<p>Corporate bodies and families are kinds of groups, though other kinds of groups are
+possible. For example, the "electorate" — all of the voters in a given election.</p>
+<p>Complex, large groups may be subdivided into other groups.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Manchester United F.C. [en] [football club] <br>
+San Francisco Opera [en] [opera company] <br>
+Parliament of the United Kingdom [en] [legislative body] <br>
+Corning Inc. [en] [technology company] <br>
+Green Party of Canada [en] [political party] <br>
+Diné/Navajo Nation [en] [indigenous American tribe] <br>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+
+  <section id="RiC-E11">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E11</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Corporate Body</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			An organized group of persons that act together as an agent, and that has a recognized
+legal or social status.
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Corporate body is a kind of <b>Group (RiC-E09).</b></p>
+			<p>By exception, within some legal contexts, a sole trader or sole proprietor may be
+recognized as a corporate body, even when the economic enterprise does not have
+additional members.</p>
+<p>Corporate bodies often have a mandate giving them the authority to act within their
+area(s) of competence. They will also usually act within a particular jurisdiction being
+governed by legal and other rule-based frameworks. A corporate body though may be
+constituted in a more informal manner and exist as an entity by virtue of its recognition
+as such by its members.</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Australian Hearing Services [en] [statutory body] <br>
+Gilbert and George [en] [collaborative art duo] <br>
+Library and Archives Canada [en] [federal agency] <br>
+The Who [en] [musical group] <br>
+Faculty of Science, University of Strathclyde [en] <br>
+Ministère de la Culture et de la Communication: Direction générale des patrimoines [fr] <br>
+[federal agency] <br>
+Parroquia de San Antonio Abad de Bilbao [es] [Catholic church] <br>
+Ministerio de Ciencia y Tecnología [es] [federal agency] <br>
+Organización de Estados Americanos [es] [international organisation] <br>
+XV Brigada Internacional del Ejército Popular de la República [es] [military unit] <br>
+Altos Hornos de Vizcaya, S.A. [es] [metallurgy manufacturing company] <br>
+Concilio de Trento (1545-1563) [it] [council of the Catholic church] <br>
+Hospedaria de Imigrantes da Ilha das Flores [pt][public agency] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td>
+			<p>See CIDOC-CRM E40 (Legal Body).</p>
+			<p>See PROV-O Organization class ("An organization is a social or legal institution such as a
+company, society, etc.")</p>
+<p>See the Organization Ontology, Organization class ("Represents a collection of people
+organized together into a community or other social, commercial, or political structure.
+The group has some common purpose or reason for existence which goes beyond the
+set of people belonging to it and can act as an Agent. Organizations are often
+decomposable into hierarchical structures.")</p>
+
+		</td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E12">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E12</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Position</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td> The functional role of a person within a group. </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Position is a kind of <b>Agent (RiC-07).</b></p>
+			<p>Position is the functional role of a person within a group.</p>
+			<p>Position exists independently of the person or persons that hold the position within a
+group.</p>
+<p>More than one person may hold a position.</p>
+<p>Position is commonly defined in a mandate, often called a position description or job
+description. The mandate may specify the work to be performed (activity) as well as the
+competencies for performing the activity.</p>
+<p>A position is often given a name.</p>
+<p>A position may be tied to a project or to a set of tasks and thus have a defined duration.</p>
+<p>A position may change over time, as the group that establishes it changes over time.</p>
+<p>Within the records created by a corporate body, a position may be used to identify the
+record sets resulting from activities performed by one or more persons holding the
+position over time, without necessarily identifying or describing the person or persons,
+or identifying which records were created by each person.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Pope, Roman Catholic Church [en] <br>
+President of France [en] <br>
+Prime Minister of Great Britain [en] <br>
+Chancellor of the University of California [en] <br>
+President of Toyota Motor Corporation [en] <br>
+State Archivist and Executive Director of the Louisiana State Archives [en] <br>
+Maestre Racional de la Casa y Corte del Rey de Aragón [es] <br>
+Presidente del Gobierno de España [es] <br>
+Pai de familia [pt] <br>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E13">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E13</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Mechanism</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			A process or system created by a person or group that performs an activity.
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			Mechanism is a kind of <b>Agent (RiC-E07).</b>
+			<p>A mechanism may have both mechanical and software components or may be
+exclusively software. A mechanism acts in the world producing physical or social effects
+and may generate or modify records.</p>
+<p>A mechanism performs activities based on rules determined by the agent that designed
+and created it. A mechanism has an essential, derivative relation with the designing and
+creating agent.</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			<p>Cassini–Huygens [space probe, robotic spacecraft]  <br>
+Googlebot [webcrawler] <br>
+soccer.bot [chatbot] <br>
+ImageMagick [digital image conversion software] <br>
+Xena [Xml Electronic Normalising for Archives] <br>
+Dawn [space probe, robotic spacecraft] <br>
+Argo [ocean probe] <br>
+Perseverance [Mars rover]</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E14">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E14</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Event</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Something that happens or occurs in time and space.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			Event is a kind of <b>Thing (RiC-E01).</b>
+
+			<p>An event may be caused by nature, an agent, or a combination of nature and agent.</p>
+			<p>Events have temporal and spatial boundaries. An event may actively involve some
+agent(s) and affect any entity.</p>
+<p>An event may be discrete, happening at a specific moment in time, or may occur over an
+extended period of time. Events may have events as parts, and events may precede or
+follow one another. Multiple agents may participate in the same event, and in different
+roles.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Eruption of Mount Vesuvius (79 CE) [en] <br>
+San Francisco Earthquake (1906) [en] <br>
+Women's March (2017) [en] <br>
+Indian Ocean Earthquake and Tsunami (2004) [en] <br>
+Second World War (1939-1945) [en] <br>
+Registering births (Albemarle County, Virginia) [en] <br>
+Arno River Flood (1966) [en] <br>
+Restoration of records damaged in the Arno River Flood (1966- ) [en] <br>
+T.S. Eliot and Groucho Marx corresponding (1961-1964) [en] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td>
+			<p>Compare to:</p>
+			<p>LODE Event class (2010) with some important details in the definition:</p>
+			<p>"An event consists of some temporal and spatial boundaries subjectively imposed on the
+flux of reality or imagination, that we wish to treat as an entity for the purposes of
+making statements about it. In particular, we may wish to make statements that relate
+people, places, or things to an event. Note that, unlike some definitions of ‘event,’ this
+definition does not specify that an event involves a change of state, nor does it attempt
+to distinguish events from processes or states."</p>
+<p>Event in the Event ontology (2007).</p>
+		</td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E15">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E15</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Activity</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>The doing of something for an agent designed purpose.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Activity is a kind of <b>Event (RiC-E14).</b>  </p>
+			<p>Activity is specifically used to designate the purposeful activity of an agent.</p>
+			<p>Activity may be understood from two perspectives. First, it can be understood as leading
+to an end. The end is the purpose of the activity, or why the activity is performed.
+Second, it can be understood in terms of the processes that lead to achieving the end,
+how the end is realized through coordinated actions.</p>
+<p>Purpose and process are complementary understandings of activity. Together the two
+perspectives address why the activity is performed, the expected ends or outcomes; and
+how the activity fulfils the purpose.</p>
+<p>While activity has an intended end, it may also have unintended consequences and
+results, or side-effects (for example, a scientific experiment that has unexpected
+results). While, such unintended consequences may not be the focus of the description,
+they are context.</p>
+<p>In a corporate or government context an activity may also be called a "function."</p>
+<p>An activity exists in a specific social and cultural context, and within that context is
+subject to change over time.</p>
+<p>An activity may be composed of other activities.</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Marketing [en] [process of exploring, creating, and delivering value to meet the needs of
+a target market in terms of goods and services] <br>
+Research and development [en] [set of innovative activities undertaken by corporations <br>
+or governments in developing new services or products] <br>
+Writing poetry [en] [creative process] <br>
+Describing archives [en] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E16">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E16</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Rule</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			Conditions that govern the existence, responsibility, or authority of an agent; or the
+performance of an activity by an agent; or that contribute to the distinct characteristics
+of things created or managed by an agent.
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Rule is a kind of <b>Thing (RiC-E01).</b></p>
+			<p>Rule can be related directly to agent, activity, or anything created or managed by
+agents, such as a record resource or instantiation.</p>
+<p>A rule may be unwritten or written or otherwise documented. Unwritten rules may
+include though are not limited to the following: social mores, customs, or community
+expectations. Written rules may include though are not limited to the following:
+constitutions, legislation, acts (legal), statutes, legal codes, ordinances, charters, mission
+statements, regulations, policies, procedures, instructions, codes of conduct or ethics,
+professional standards, work assignments, or work plans.</p>
+<p>The source or sources of some rules governing the existence or activity of an agent may
+be external (for example, expressed in elections, social mores, customs, community
+expectations, laws, regulations, standards, and best practice codes), while others may
+be expressed within the immediate context of an agent (for example, policies, or written
+or verbal instructions).</p>
+<p>The evidence for identifying rules may be found in their entirety in one documentary
+source (for example, a law or regulation) or may be found in two or more sources.
+</p>
+
+<p>Rule should not be confused with the one or more documentary sources that serve as
+evidence of its identity. A documentary source is a record.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Records in Contexts-Conceptual Model [en] [standard for archival description] <br>
+Constitución Española del 27 de diciembre de 1978 [es] [Constitution of Spain] <br>
+Fuero de Guadalajara de 1219 [es] [Spanish legal term and concept] <br>
+Manual de Procedimientos de Administrativos de la Universidad Pública de Navarra [es] <br>
+[Manual of Administrative Procedures of the Public University of Navarra] <br>
+Decreto n. 8816/1882 sobre as declarações exigidas ao sestrangeiros no ato de visita da
+Polícia [pt] [Decree on the declarations required of foreigners in the act of visiting the
+Police] <br>
+The Manorial Documents Rules 1959 (legislation.gov.uk/uksi/1959/1399/) [en] <br>
+[legislation allowing the provisions of an Act of Parliament to be brought into force] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+  <section id="RiC-E17">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E17</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Mandate</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>
+			Delegation of responsibility or authority by an agent to another agent to perform an
+activity.
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Mandate is a kind of <b>Rule (RiC-E16).</b></p>
+			<p>A mandate confers the responsibility or authority of an agent to perform a specified
+activity. In addition to assigning an activity and delegating responsibility or authority to
+perform the activity to an agent, a mandate commonly limits the place (jurisdiction) and
+date (time period) within which an agent may perform the activity (where and when).</p>
+<p>Mandates exist in a specific social and cultural context, and within that context are
+subject to change over time.</p>
+<p>While a mandate may be tacit, in whole or part, it may be explicitly expressed in a
+variety of documentary sources (for example, constitutions, legislation, (legal) acts,
+statutes, legal codes, ordinances, charges, charters, or mission statements).</p>
+<p>The evidence for identifying a mandate may be found in its entirety in one documentary
+source (for example, a law or regulation), or may be found in two or more sources.</p>
+<p>A mandate should not be confused with the one or more documentary sources that
+serve as evidence of its identity. A documentary source is a record.</p>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Authority granted by electors to a person to represent them in Parliament [en] <br>
+Authority of a Mayor of New York City to grant building authorisations [en] <br>
+The mandate of the Australian Hearing Services, as set out by the Australian Hearing <br>
+Services Act 1991 (s 7), is to provide hearing services, carry out research and <br>
+development in relation to hearing services and acoustic development, and conduct <br>
+education about hearing services. [en] <br>
+O decreto n. 603/1890 dá como competências da Inspetoria Geral de Terras e <br>
+Colonização a extremação das terras de domínio público e particular, a demarcação, <br>
+divisão e registro das terras devolutas, a legitimação de posses, concessões e <br>
+sesmarias, além da fiscalização e direção de todos os serviços atinentes à imigração e <br>
+colonização e promoção da imigração espontânea [pt] <br>
+Authority of The National Archives (UK) to maintain and make public a register of <br>
+manorial documents in England and Wales. [en] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+
+  <section id="RiC-E18">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E18</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Date</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Chronological information associated with an entity that contributes to its identification
+and contextualization.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			<p>Date is a kind of <b>Thing (RiC-E01).</b></p>
+			<p>A date may be represented in natural language, based on a digital standard, or both.
+Digital standard dates will typically be based on ISO 8601, or Extended Date-Time
+Format (EDTF).</p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			4 March 1842 [en] [day in Gregorian calendar] <br>
+3 Henry VIII [en] [year in regnal years of Henry VIII] <br>
+1925-1957[date range in Gregorian calendar] <br>
+20th Century [en] [100 years in Gregorian calendar] <br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+
+
+  <section id="RiC-E22">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-E22</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Place</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Bounded, named geographic area or region.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope Notes</b></td>
+		<td>
+			Place is a kind of <b>Thing (RiC-E01).</b>
+			<p>A place may be a jurisdiction, a man-made structure, or a natural feature. A man-made
+structure or natural feature may also be a jurisdiction.</p>
+<p>A jurisdiction is the bounded geographic area within which an agent has the authority to
+perform specified activities constrained by rules.</p>
+<p>Jurisdictions, man-made structures, and natural features are historical entities. A place
+thus may have a beginning date and ending date and changing boundaries that result
+from human or natural events. </p>
+<p>A place may be systematically referenced to a location on the earth (geographic
+coordinates).</p>
+		</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+			Nova Scotia [en] [province of Canada] <br>
+North Lanarkshire District [en] [council area of Scotland] <br>
+Manchester Diocese [en] [ecclesiastical district] <br>
+Reino de Granada [es] [Emirate of Granada] <br>
+El Bierzo [es] [county in Spain] <br>
+Cabo de Corrubedo [es] [peninsula in Spain] <br>
+Ilha das Flores (São Gonçalo, RJ, Brasil) [pt] [island in the state of Rio de Janeiro] <br>
+Amazon River [en] <br>
+Río Guadalquivir [es] [river] <br>
+Paris [fr] [city in France] <br>
+Vía de la Plata [es] [ancient commercial and pilgrimage path] <br>
+Avenida de Mayo (Buenos Aires, Argentina) [pt] [street, avenue] <br>
+The Flatiron Building (New York City) [en] [building] <br>
+
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Comments</b></td>
+		<td></td>
+	</tr>
+</table>
+  </section>
+

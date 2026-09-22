@@ -1,0 +1,7 @@
+999 
+resource.fmt|Record resource||RiC-E02 Record Resource
+agent.fmt|Agent||RiC-E07 Agent
+event.fmt|Event||RiC-E14 Event
+rule.fmt|Rule||RiC-E16 Rule
+date.fmt|Date||RiC-E18 Date
+place.fmt|Place||RiC-E22 Place

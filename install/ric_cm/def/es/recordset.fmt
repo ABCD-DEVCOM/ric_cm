@@ -1,0 +1,192 @@
+H||Local information|0|0||||||||||||0||0|0|||
+F|1|Type of thing|0|0|||S|||P|ric_typeofthing.tab|||||1||1|0|||
+F|2|Thing ID|0|0|||RO||30|||||||1||1|0|||
+F|20|Dates and operators|0|1|||OD|20|20|||||||1||1|0|||
+H||Attributes of entity|0|0||||||||||||0||0|0|||
+F|143|RiC-A43 General Description|0|0|||X|8|100|||||||1||0|0|||
+T|122|RiC-A22 Identifier|0|1|iesc||X|4|100|||||||1||0|0|||
+S||Identifier|0|0|i||X|||||||||0||0|0|||
+S||Explanation|0|0|e||X|||||||||0||0|0|||
+S||Source organisation|0|0|s||X|||||||||0||0|0|||
+S||Country|0|0|c||X||||ric_a22c.tab|||||0||0|0|||
+T|128|RiC-A28 Name|0|1|flo||X|4|100|||||||1||0|0|||
+S||First name (Person)|0|0|f||X|||||||||0||0|0|||
+S||Last name (Person)|0|0|l||X|||||||||0||0|0|||
+S||Other entity name|0|0|o||X|||||||||0||0|0|||
+F|103|RiC-A03 Authenticity Note|0|0|||X|3|100|||||||1||1|0|||
+F|107|RiC-A07 Classification|0|1|||X|3|100|||||||1||0|0|||
+F|108|RiC-A08 Conditions of Access|0|0|||X|||||||||1||0|0|||
+F|109|RiC-A09 Conditions of Use|0|0|||X|||||||||1||0|0|||
+F|110|RiC-A10 Content Type|0|1|||COMBO|5|30|P|ric_a10.tab|||||1||0|0|||
+F|121|RiC-A21 History|0|0|||X|10|100|||||||1||0|0|||
+F|124|RiC-A24 Integrity Note|0|1|||X|4|100|||||||1||0|0|||
+F|125|RiC-A25 Language|0|1|||COMBORO|4|20|P|ric_a25.tab|||||1||0|0|||
+F|126|RiC-A26 Legal Status|0|0|||S|4|100|P|ric_a26.tab|||||1||0|0|||
+F|135|RiC-A35 Record Resource Extent|0|1|||X|4|100|||||||1||0|0|||
+F|138|RiC-A38 Scope and content|0|0|||X|4|100|||||||1||0|0|||
+F|139|RiC-A39 State|0|0|||S|||P|ric_a39.tab|||||1||0|0|||
+F|140|RiC-A40 Structure|0|0|||X|4|100|||||||1||0|0|||
+F|101|RiC-A01 Accruals|0|0|||S|||P|ric_a01.tab|||||1||0|0|||
+F|117|RiC-A17 Documentary Form Type|0|0|||S|||P|ric_a17.tab|||||1||0|0|||
+F|136|RiC-A36 Record Set Type|0|0|||SRO|||P|ric_a36.tab|||||1||0|0|||
+H||Relations of entity|0|0||||||||||||0||0|0|||
+T|201|RiC-R001 is related to|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Is related to|0|0|1||X|||D|ric_cm|R001_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|202|RiC-R002 has or had part|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has or had part|0|0|1||X|||D|ric_cm|R002_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|208|RiC-R008 precedes or preceded|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Precedes or preceded|0|0|1||X|||D|ric_cm|R008_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|209|RiC-R009 precedes in time|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Precedes in time|0|0|1||X|||D|ric_cm|R009_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|212|RiC-R012 has copy|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has copy|0|0|1||X|||D|ric_cm|R012_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|213|RiC-R013 has reply|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has reply|0|0|1||X|||D|ric_cm|R013_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|219|RiC-R019 has or had subject|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has or had subject|0|0|1||X|||D|ric_cm|R019_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|220|RiC-R020 has or had main subject|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has or had main subject|0|0|1||X|||D|ric_cm|R020_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|221|RiC-R021 describes or described|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Describes or described|0|0|1||X|||D|ric_cm|R021_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|222|RiC-R022 is record resource associated with record resource|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Is record resource associated with record resource|0|0|1||X|||D|ric_cm|R022_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|223|RiC-R023 has genetic link to record resource|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has genetic link to record resource|0|0|1||X|||D|ric_cm|R023_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|225|RiC-R025 has or had instantiation|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has or had instantiation|0|0|1||X|||D|ric_cm|R025_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|226|RiC-R026 has provenance|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has provenance|0|0|1||X|||D|ric_cm|R026_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|227|RiC-R027 has creator|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has creator|0|0|1||X|||D|ric_cm|R027_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|228|RiC-R028 has accumulator|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has accumulator|0|0|1||X|||D|ric_cm|R028_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|229|RiC-R029 has receiver|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has receiver|0|0|1||X|||D|ric_cm|R029_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|230|RiC-R030 has collector|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has collector|0|0|1||X|||D|ric_cm|R030_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|231|RiC-R031 has sender|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has sender|0|0|1||X|||D|ric_cm|R031_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|232|RiC-R032 has addressee|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Has addressee|0|0|1||X|||D|ric_cm|R032_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||
+T|233|RiC-R033 documents to|0|1|1abcdef||RO|||||||||1||1|0|||
+S||Documents|0|0|1||X|||D|ric_cm|R033_|@ric_relations.pft|||0||0|0|||
+S||RiC-RA01 Certainty of Relation|0|0|a||S|||P|ric_ra01.tab|||||0||0|0|||
+S||RiC-RA02 Date of Relation|0|0|b||X|||||||||0||0|0|||
+S||RiC-RA03 Description of Relation|0|0|c||X|||||||||0||0|0|||
+S||RiC-RA04 Identifier of Relation|0|1|d||X|4|100|||||||0||0|0|||
+S||RiC-RA05 Source of Relation|0|1|e||X|4|100|||||||0||0|0|||
+S||RiC-RA06 Place of Relation|0|0|f||X|||||||||0||0|0|||

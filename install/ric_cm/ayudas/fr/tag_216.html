@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ABCD - RiC-CM database help file - tag 216</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+ 
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<section>
+<table border>
+
+<tr>
+    <td bgcolor=#bdc3c7>ID</td>
+    <td colspan="2"><strong>RiC-R016</strong></td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Name</td>
+    <td class="value"><em>has successor </em></td>
+    <td class="inverse">Inverse relation :
+        <strong><em>: is successor of </em></strong>
+    </td>
+</tr>
+
+<tr> 
+    <td bgcolor=#bdc3c7>Domain/Range</td>
+    <td>Agent </td>
+    <td>Agent </td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Cardinality</td>
+    <td colspan="2">1 to M</td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Definition</td>
+    <td colspan="2">
+        Connects an agent to another agent that succeeds it chronologically. 
+    </td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Scope Notes</td>
+    <td colspan="2">
+       <P>There may be zero to many intermediate agents, ignored or unknown, between the 
+two connected agents.</P> 
+<P>Can be used when there is a transfer of function from the first agent to the second 
+agent.</P>
+    </td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Examples</td>
+    <td colspan="2">
+       <P>Le Bureau des Monuments historiques (1863-1870) (au sein de la Surintendance des 
+Beaux-Arts, une subdivision du ministère français de la maison de l'Empereur) has 
+successor le Bureau des Monuments historiques (1870-1907) au sein de la 
+Direction des Beaux-Arts, une subdivision du ministère français de l'Instruction 
+publique. [corporate body] [fr]</P> 
+<P>La Administración de Hacienda de la provincia de Barcelona has successor la 
+Delegación Provincial de Hacienda de Barcelona y is successor of la Intendencia de 
+Ejército y Provincia del Principado de Cataluña, en sus funciones Hacendísticas. 
+[corporate body] [es]</P> 
+<P>O Departamento Federal de Segurança Pública has successor o Departamento de 
+Polícia Federal. [corporate body] [pt]</P> 
+<P>O Departamento de Pollícia Federal is successor of o Departamento Federal de 
+Segurança Pública. [corporate body] [pt]</P>
+    </td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Relation types</td>
+    <td colspan="2"><p>Sequential relations</p> 
+<p>Agent to agent relations </p></td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Broader relations</td>
+    <td colspan="2">
+        RiC-R001 <em><p>RiC-R009 precedes in time</p> 
+<p>RiC-R044 is agent associated with agent</p></em>
+    </td>
+</tr>
+
+<tr>
+    <td bgcolor=#bdc3c7>Narrower relations</td>
+    <td colspan="2">
+       RiC-R017 has descendantN
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html>

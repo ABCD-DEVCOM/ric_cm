@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ABCD - RiC-CM database help file - tag 115</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<section>
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-A15</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Demographic Group  </b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Categorization of a person or group based on shared characteristics.<td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Domain</b></td>
+		<td>Person; Group </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Specifications</b></td>
+		<td> 
+</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Extensibility</b></td>
+		<td>Needs to be differentiated into specific attributes in order to be useful. <p> Among possible
+		specific demographic attributes are gender, (biological) sex, education, identity, place, ancestry, ethnic/cultural identification, and religion. </td>
+	</tr>
+ 	<tr>
+		<td bgcolor=#bdc3c7><b>Repeatability</b></td>
+		<td>Relative to the specific kind of demographic category, may or may not be repeatable.  </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Value schema</b></td>
+		<td>Specific demographic attributes should use controlled values. </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope</b></td>
+		<td>Intended to recognize that demographic categorization of persons or groups may be useful in identifying persons or groups associated with records in specific contexts. Demographic categorization presents intellectual and ethical challenges. While it may benefit users of
+		records by providing context and facilitating specific kinds of research, historically it has also been abused, for example,
+		when one demographicgroup argues its superiority over another demographic group as justification for oppression, even genocide. <p> A person or group may belong 
+		to several demographic groups. <p> A kind of demographic group for a person is an occupation type.   </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>Women [en]<br> Brazilians [en]<br> Protestants [en] <br>Clergy [en] Peasants [en]<br> Non-binary persons [en] <br>Families [en]    </td>
+	</tr>
+</table>
+</section>
+</body>
+</html>

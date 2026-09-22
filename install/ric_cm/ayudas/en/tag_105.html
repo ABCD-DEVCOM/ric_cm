@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>ABCD - RiC-CM database help file - tag 105</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      /* Espace en haut ajusté pour la hauteur des 3 lignes fixes */
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 3 colonnes de taille égale */
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu en 5 colonnes x 3 lignes -->
+  <div class="tab-bar-container">
+    <nav class="tab-grid">
+      <!-- Ligne 1 -->
+      <a href="#RiC-CM">RiC-CM explanations</a>
+      <a href="#Audio">Supports audio</a>
+	  <a href="#Projetee">Images projetées</a>
+	  <a href="#Electronique">Supports électroniques</a>
+	  <a href="#Microforme">Supports de microforme</a>
+	  <a href="#Microscopique">Supports microscopiques</a>
+	  <a href="#Sans_mediation">Supports sans médiation</a>
+	  <a href="#Stereoscopique">Supports stéréoscopiques</a>
+	  <a href="#Video">Supports vidéo</a>
+    </nav>
+  </div>
+  
+
+<section id="RiC-CM">
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-A05</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Carrier Type</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>Categorization of physical material on which information is represented.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Domain</b></td>
+		<td>instantiation.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Specifications</b></td>
+		<td>In order to manage an instantiation of a record resource, it is necessary to note the 
+type of carrier on which the record resource is instantiated as its nature will 
+determine the environmental storage conditions and the prerequisites for and 
+possible ways of accessing and using the record resource.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Extensibility</b></td>
+		<td>May be extended with any number of specific attributes.</td>
+	</tr>
+ 	<tr>
+		<td bgcolor=#bdc3c7><b>Repeatability</b></td>
+		<td>Repeatable</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Value schema</b></td>
+		<td>Controlled value</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope</b></td>
+		<td>Carrier type should not be confused with representation type of the instantiation or 
+the content type of a record resource as the form of communication can be 
+independent of the representation or the carrier, for example a map (content type 
+"cartographic image") may be represented as a sketch (representation type "visual") 
+recorded as a physical document (carrier type "paper").</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>clay tablets [en] 
+ <p>papyrus [en]</p>
+<p>magnetic disk [en]</p>
+<p>optical disk [en]</p>
+<p>paper [en]</p> 
+<p>parchment [en]</p>
+<p>film [en]</p>
+<p>vinyl disk [en]</p>
+<p>magnetic tape [en]</p> 
+</td>
+	</tr>
+</table>
+</section>
+
+<section>
+<h2><p align=center>The proposed pick-list elements are extracted from the <a href= https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/> Type de support</a> element of <a href=https://code.rdafr.fr>Code RDA-FR</a></h2>
+</section>
+<section id="Audio">
+<h3>Supports audio</h3>
+<table border>
+<tbody>
+<tr>
+<td><strong>Type de support</strong></td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p id="Support_audio">Support audio</p>
+</td>
+<td>
+<p>Enregistrement audio – sans informations détaillées.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Bande_magnétique_audio">Bande magnétique audio</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un métrage de bande magnétique sur laquelle sont enregistrés des signaux électriques qui peuvent être convertis en sons à l’aide d’un appareil de lecture de type lecteur audio à bobines.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Bande_TEFI">Bande TEFI</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande enroulée sur un seul noyau sur laquelle est gravé un sillon qui constitue le support d’un enregistrement audio analogique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Bobine_de_piste_sonore">Bobine de piste sonore</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un métrage de film sur lequel est enregistré du son.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Cartouche_audio">Cartouche audio</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique enroulée sur un seul noyau qui constitue le support d’un enregistrement audio analogique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Cassette_audio_analogique">Cassette audio analogique</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique enroulée sur deux noyaux jumelés, qui constitue le support d’un enregistrement audio analogique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cassette audio numérique</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique enroulée sur deux noyaux jumelés, qui constitue le support d’un enregistrement audio numérique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Digital Compact Cassette (DCC) ;</li>
+	<li>Cassette DAT (Digital Audio Tape).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Cassette_DAT">cassette DAT</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Cassette_audio_num%C3%A9rique"><em>cassette audio numérique</em></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CD audio</p>
+</td>
+<td>
+<p>Disque optique de type CD (Compact Disc), contenant des données sonores stockées sous forme numérique quel que soit leur format d’enregistrement et de codage.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>CD audio ;</li>
+	<li>SACD (Super audio CD) ;</li>
+	<li>CD MP3 ;</li>
+	<li>CD-R audio.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="CD_Extra">CD-Extra</p>
+</td>
+<td>
+<p>CD audio avec contenu partiel sur CD-ROM.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>CD-Extra ;</li>
+	<li>CD-Plus ;</li>
+	<li>OpenDisc.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Cylindre_phonographique">Cylindre phonographique</p>
+</td>
+<td>
+<p>Objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu (gravure analogique).</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les cylindres en cire ;</li>
+	<li>les cylindres en celluloïde.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Disque_audio">Disque audio</p>
+</td>
+<td>
+<p>Disque sur lequel les ondulations sonores, enregistrées sous forme de modulations, impulsions, etc. ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale (gravure analogique).</p>
+<p>Exclut les disques optiques comme les CD, etc.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les disques 78 tours ;</li>
+	<li>les disques microsillons (y compris les disques souples) ;</li>
+	<li>les disques à gravure directe (Pyral).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="DVD_audio">DVD audio</p>
+</td>
+<td>
+<p>Disque optique de type DVD (Digital Versatile Disc, c’est-à-dire Disque numérique polyvalent) contenant des données sonores.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Feuille_acoustique">Feuille acoustique</p>
+</td>
+<td>
+<p>Feuille plastique comprenant plusieurs groupes de sillons en spirales, qui peuvent être convertis en sons à l’aide d’un appareil spécifique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Fil_magnétique">fil magnétique</p>
+</td>
+<td>
+<p>Fil métallique sur lequel sont enregistrés des signaux électriques qui peuvent être convertis en sons à l’aide d’un appareil de lecture spécifique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Lecteur_audio_numérique_préenregistré">lecteur audio numérique préenregistré</p>
+</td>
+<td>
+<p>Voir <em><a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Playaway">dispositif électronique autonome</a></em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="MiniDisc">MiniDisc</p>
+</td>
+<td>
+<p>Disque inséré dans un plastique rigide de sept centimètres de côté qui constitue un support magnéto-optique d’enregistrement et de reproduction numérique de données sonores (Sony, 1992).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Bande_perforée_pour_instrument_mécanique">bande perforée pour instrument mécanique</p>
+</td>
+<td>
+<p>Rouleau ou bande de papier sur lequel les notes de musique sont représentées par des perforations, destiné à reproduire mécaniquement la musique lorsqu’il est utilisé avec un piano mécanique, un orgue mécanique, etc.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les rouleaux pour piano ;</li>
+	<li>les cartons d’orgue de Barbarie.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Ruban_métallique_magnétique">ruban métallique magnétique</p>
+</td>
+<td>
+<p>Ruban métallique sur lequel sont enregistrés des signaux électriques qui peuvent être convertis en sons à l’aide d’un appareil de lecture spécifique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="Blue_ray_audio">Blu-ray audio</p>
+</td>
+<td>
+<p>Disque optique haute définition, format Blu-ray, contenant des données audio.</p>
+<p>Variantes :</p>
+<ul class="listeapuces2">
+	<li>BD (abréviation de Blu-ray disc) ;</li>
+	<li>Blu-ray Pure Audio.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>matrice de disque</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Matrice"><em>matrice</em></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="Projetee">
+<h3>Supports d’images projetées</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports d’images projetées</strong></td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>film ou transparent</p>
+</td>
+<td>
+<p>Film ou support transparent – sans informations détaillées.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>bobine de film</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un film cinématographique à utiliser avec un projecteur de film cinématographique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche de film fixe</p>
+</td>
+<td>
+<p>Boîtier scellé contenant un film fixe.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>diapositive</p>
+</td>
+<td>
+<p>Petite feuille en matériau transparent ou petite plaque de verre (habituellement dans un cadre protecteur) portant une image positive directe, conçue pour être utilisée avec un projecteur ou une visionneuse.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les diapositives de la marque Kodachrome ;</li>
+	<li>les diapositives de la marque Ektachrome.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>film fixe</p>
+</td>
+<td>
+<p>Rouleau de film, avec son enregistré ou non, contenant une succession d’images devant être projetées une par une.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>film fixe court</p>
+</td>
+<td>
+<p>Courte bande de film contenant une succession d’images devant être projetées une par une, généralement sous une forme droite plutôt qu’enroulée.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>plaque de lanterne magique</p>
+</td>
+<td>
+<p>Plaque de verre pour les lanternes magiques.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rouleau de film</p>
+</td>
+<td>Métrage de film enroulé.</p>
+</td>
+</tr>
+<tr>
+<td>transparent pour rétroprojecteur</td>
+<td>
+Feuille de matériau transparent (avec ou sans monture de protection) comportant une image et conçue pour être utilisée avec un rétroprojecteur
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="Electronique">
+<h3>Supports électroniques</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports électroniques</td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>support numérique manipulable</p>
+</td>
+<td>
+<p>Support tangible contenant des données numériques – sans informations détaillées.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Blu-ray Disc</p>
+</td>
+<td>
+<p>Disque optique haute définition, format Blu-ray, contenant des données numériques.</p>
+<p>Variante :</p>
+<ul class="listeapuces2">
+	<li>BD (abréviation de Blu-ray disc)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Blu-ray Disc propriétaire</p>
+</td>
+<td>
+<p>Disque optique haute définition, format Blu-ray, contenant des données numériques destinées à être uniquement lues par un lecteur compatible.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Sony PlayStation 3 (PlayStation 3, PS3) ;</li>
+	<li>Sony PlayStation 4 (PlayStation 4, PS4).</li>
+</ul>
+<p>Variante :</p>
+<ul class="listeapuces2">
+	<li>BD (abréviation de Blu-ray disc).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>bobine de bande informatique</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un métrage de bande informatique à utiliser avec un lecteur de bande informatique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>carte mémoire</p>
+</td>
+<td>
+<p>Carte constituant une unité amovible de stockage de données numériques préenregistrées.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les cartes mémoire SD (Secure Digital) ;</li>
+	<li>les cartes mémoire CF (Compact Flash) ;</li>
+	<li>les cartes mémoire MS (Memory Stick) ;</li>
+	<li>les cartes mémoire MMC (MultiMedia Card).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>carte mémoire propriétaire</p>
+</td>
+<td>
+<p>Carte constituant une unité amovible de stockage de données numériques préenregistrées conçue pour être utilisée sur une console de jeu spécifique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>DS ;</li>
+	<li>3DS ;</li>
+	<li>PSVita.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche à puce informatique</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Cartouche_de_jeu"><em>cartouche de jeu</em></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche de bande informatique</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Cartouche_informatique"><em>cartouche informatique</em></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche de disque informatique</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Cartouche_informatique"><em>cartouche informatique</em></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche de disque optique</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#CD_rom_propri%C3%A9taire"><em>CD-ROM propriétaire</em></a> (Data Discman) et <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#DVD_rom_propri%C3%A9taire"><em>DVD-ROM propriétaire</em></a> (UMD)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Cartouche_de_jeu" data-tc-id="w-0.42672522299203464"></a> cartouche de jeu</p>
+</td>
+<td>
+<p>Boîtier scellé contenant un logiciel ou code de jeu vidéo inscrit dans une mémoire morte, conçu pour être enfiché dans un ordinateur, une console de jeux vidéo ou un système d’arcade.</p>
+<p>Comprend (dates de commercialisation pour l’Europe) :</p>
+<ul class="listeapuces2">
+	<li>Les cartouches Nintendo et SEGA :</li>
+</ul>
+<ul class="listeapuces3">
+	<li>Nintendo Entertainment System (NES) (1986 – 1995),</li>
+	<li>SEGA Master System (1987 – 1996),</li>
+	<li>SEGA Mega Drive (1990 – 1999),</li>
+	<li>Nintendo Game Boy (1990 – 2000),</li>
+	<li>SEGA Game Gear (1991 – 1997),</li>
+	<li>Super Nintendo Entertainment System (Super NES) (1992 – 2000),</li>
+	<li>SEGA Pico ou SEGA Pico Logistoire (1994 – 1998),</li>
+	<li>Nintendo 64 (N64) (1997 – 2002),</li>
+	<li>Nintendo Game Boy Color (GBC) (1998 – 2003),</li>
+	<li>Nintendo Game Boy Advance (GBA) (2001 – 2008),</li>
+	<li>Nintendo DS (2005 – 2013),</li>
+	<li>Nintendo 3DS (2011 – ) ;</li>
+</ul>
+<ul class="listeapuces2">
+	<li>les cartouches Vtech :</li>
+</ul>
+<ul class="listeapuces3">
+	<li>V.Smile,</li>
+	<li>V.Smile Pocket,</li>
+	<li>V.Smile Motion ;</li>
+</ul>
+<ul class="listeapuces2">
+	<li>SNK :</li>
+</ul>
+<ul class="listeapuces3">
+	<li>NeoGeo (1990 – 2004),</li>
+	<li>NeoGeo Pocket (1998 – 2001),</li>
+	<li>NeoGoe Pocket Color (1999 – 2001).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Cartouche_informatique" data-tc-id="w-0.6620389446510551"></a> cartouche informatique</p>
+</td>
+<td>
+<p>Boîtier scellé contenant un support d’enregistrement de données numériques. Le support d’enregistrement peut être :</p>
+<ul class="listeapuces2">
+	<li>une bande magnétique enroulée sur un seul noyau (cartouche de bande informatique) ;</li>
+	<li>un ou plusieurs disques magnétiques amovibles (cartouche de disque informatique) ;</li>
+	<li>un circuit de mémoire morte ROM (Read Only Memory).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>cassette de bande informatique</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique enroulée sur deux noyaux jumelés, qui constitue le support d’enregistrement de données numériques.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CD-I</p>
+</td>
+<td>
+<p>Compact Disc Interactif, disque optique contenant des données numériques, conçu pour être utilisé avec un lecteur spécifique et un téléviseur de façon interactive.</p>
+<p>Variante :</p>
+<ul class="listeapuces2">
+	<li>CD-i.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>CD-Photo</p>
+</td>
+<td>
+<p>Disque optique contenant des données photographiques numérisées et conçu pour être utilisé soit avec un lecteur de CD-I sur un téléviseur soit avec un micro-ordinateur.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CD-ROM</p>
+</td>
+<td>
+<p>Disque optique de type CD (Compact Disc) contenant des données numériques, destinées à être uniquement lues par un ordinateur.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>CD-ROM pour ordinateur PC ou MacIntosh (y compris CD-ROM 8 cm).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="CD_rom_propriétaire" data-tc-id="w-0.8887876973656231"></a> CD-ROM propriétaire</p>
+</td>
+<td>
+<p>Disque optique de type CD (Compact Disc) contenant des données numériques, destinées à être uniquement lues par un lecteur compatible.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Dreamcast ;</li>
+	<li>Sega Saturn ;</li>
+	<li>Sony Data DiscMan : support optique propriétaire de 8 cm de type CD (Compact Disc) dans une coque en plastique, contenant des données textuelles, mis au point par Sony et conçu pour un lecteur spécifique.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="CDTV" data-tc-id="w-0.7854656029018486"></a> CDTV</p>
+</td>
+<td>
+<p>Disque optique contenant des données numériques conçu pour être utilisé sur la plateforme multimédia Commodore Dynamic Total Vision (ou Amiga CDTV) qui combine un ordinateur personnel et une console de jeu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>clé de licence de produit numérique</p>
+</td>
+<td>
+<p>Licence de produit numérique fournie par le biais du circuit de détail sous la forme d’une « clé » matérielle (une carte ou une brochure contenant un code permettant à l’acheteur de télécharger le produit).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Playaway" data-tc-id="w-0.4999202621338471"></a> dispositif électronique autonome</p>
+</td>
+<td>
+<p>Dispositif électronique contenant à la fois des données numériques préenregistrées et le lecteur correspondant utilisable seul.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les consoles de jeu autonomes (ex. Nintendo Game &amp; Watch);</li>
+	<li>les lecteurs MP3;</li>
+	<li>les tablettes ;</li>
+	<li>les livres audio « Playaway » (USA).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>disque optique hybride</p>
+</td>
+<td>
+<p>Disque optique double face, une face audio CD/CD-ROM, une autre face DVD.</p>
+<p>Variante :</p>
+<ul class="listeapuces2">
+	<li>DualDisc.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>disquette</p>
+</td>
+<td>
+<p>Disque souple et amovible de format carré contenant des données numériques, destinées à être lues par un ordinateur.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les disquettes 3,5 pouces ;</li>
+	<li>les disquettes 5 ¼ pouces ;</li>
+	<li>les disquettes 8 pouces.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>disquette propriétaire</p>
+</td>
+<td>
+<p>Disque souple et amovible de format carré contenant des données numériques, destinées à être lues par un lecteur spécifique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Amstrad CPC.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>DVD-ROM</p>
+</td>
+<td>
+<p>Disque optique de type DVD (Digital Versatile Disc, c’est-à-dire Disque numérique polyvalent) contenant des données numériques, destinées à être uniquement lues par un ordinateur.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>DVD-ROM pour ordinateur PC ou MacIntosh.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="DVD_rom_propriétaire" data-tc-id="w-0.6698881024161457"></a> DVD-ROM propriétaire</p>
+</td>
+<td>
+<p>Disque optique de type DVD (Digital Versatile Disc, c’est-à-dire Disque numérique polyvalent) contenant des données numériques, destinée à être uniquement lues par un lecteur spécifique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>GameCube (Nintendo GameCube) ;</li>
+	<li>PlayStation 1 (Sony PlayStation 1, PS1, PSone) ;</li>
+	<li>PlayStation 2 (Sony PlayStation 2, PS2) ;</li>
+	<li>Wii (Nintendo Wii) ;</li>
+	<li>Xbox (Microsoft Xbox) ;</li>
+	<li>UMD (Universal Media Disc) : support optique propriétaire de 6 cm de type DVD (Digital Versatile Disc, c’est-à-dire Disque numérique polyvalent) dans une coque en plastique, mis au point par Sony pour sa console portable PSP (PlayStation Portable). Permet de stocker des jeux vidéo ou des films.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>mémoire USB</p>
+</td>
+<td>
+<p>Support de stockage amovible contenant des données numériques préenregistrées qui se branche sur un port USB (Universal Serial Bus, c’est-à-dire Bus universel en série).</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les clés USB ;</li>
+	<li>les disques durs externes.</li>
+</ul>
+<p>NB : pour les lecteurs MP3 autonomes, voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Playaway"><em>dispositif électronique autonome</em></a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>puce RFID</p>
+</td>
+<td>
+<p>Dispositif contenant des données destinées à être lues par radio-fréquence (RFID = Radio Frequency Identification) ; il comprend une antenne associée à une puce électronique qui lui permet de recevoir et de répondre aux requêtes radio émises depuis le lecteur.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ressource dématérialisée</p>
+</td>
+<td>
+<p>Contenu numérique – sur un serveur distant ou sans association à un support particulier.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="Microforme">
+<h3>Supports de microformes</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports de microformes</strong></td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>microforme</p>
+</td>
+<td>
+<p>Microforme – sans informations détaillées.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>microfilm</p>
+</td>
+<td>
+<p>Film portant une série de micro-images disposées de façon linéaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>bande de microfilm</p>
+</td>
+<td>
+<p>Courte bande de film portant une série de micro-images disposées de façon linéaire, découpée dans un rouleau.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>bobine de microfilm</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un film portant une série de micro-images disposées de façon linéaire, à glisser dans un lecteur de microfilm.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>carte à fenêtre</p>
+</td>
+<td>
+<p>Carte comprenant une ou plusieurs ouvertures ou fenêtres rectangulaires sur lesquelles sont montées des images de microfilm.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cartouche de microfilm</p>
+</td>
+<td>
+<p>Boîtier scellé contenant un film enroulé sur un seul noyau et portant une série de micro-images disposées de façon linéaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cassette de microfiches</p>
+</td>
+<td>
+<p>Cassette contenant des microfiches non coupées.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cassette de microfilm</p>
+</td>
+<td>
+<p>Boîtier scellé contenant un film enroulé sur deux noyaux jumelés et portant une série de micro-images disposées de façon linéaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>micro-opaque</p>
+</td>
+<td>
+<p>Fiche ou feuille de matériau opaque comportant une série de micro-images disposées selon deux axes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>microfiche</p>
+</td>
+<td>
+<p>Feuille de film portant une série de micro-images disposées selon deux axes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rouleau de microfilm</p>
+</td>
+<td>
+<p>Métrage enroulé de film portant une série de micro-images disposées de façon linéaire.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="Microscopique">
+<h3>Supports microscopiques</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports microscopiques</strong></td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>lame pour microscope</p>
+</td>
+<td>
+<p>Petite feuille de matériau transparent (avec ou sans monture de protection) comportant un objet minuscule, conçue pour une utilisation au moyen d’un dispositif tel qu’un microscope.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="Sans_mediation">
+<h3>Supports sans médiation</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports sans médiation</td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>appareil</p>
+</td>
+<td>
+<p>Objet fabriqué pour exécuter un travail, observer un phénomène, prendre des mesures, et délivrant de façon largement autonome le service attendu par l’utilisateur final.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>autocollant</p>
+</td>
+<td>
+<p>Support de texte ou d’images disposant sur sa face inférieure d’une fine couche d’adhésif permettant de le fixer sur une surface, à titre généralement définitif.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les pochettes de gommettes autocollantes ;</li>
+	<li>les vignettes « Panini » ;</li>
+	<li>les timbres.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>bande de film photographique</p>
+</td>
+<td>
+<p>Pellicule de film photographique négatif sur support transparent, ayant fait l’objet d’un découpage (plusieurs négatifs d’affilée, à plat).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>bobine de film photographique</p>
+</td>
+<td>
+<p>Pellicule de film photographique négatif sur support transparent, roulé sur son support d’origine, en bobine.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>brochure</p>
+</td>
+<td>
+<p>Unité matérielle réunissant un certain nombre de feuillets sous la forme d’un cahier broché ou de feuilles agrafées, comptant généralement moins de 48 pages.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Carte" data-tc-id="w-0.17339602236700924"></a> carte</p>
+</td>
+<td>
+<p>Petit rectangle de papier fort ou de carton servant de support d’information (texte ou image). Il peut être plié pour former une carte double.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les cartes postales ;</li>
+	<li>les cartes à jouer ;</li>
+	<li>les cartes de visite ;</li>
+	<li>les fiches de cuisine ;</li>
+	<li>les fiches pédagogiques.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>dépliant</p>
+</td>
+<td>
+<p>Feuille en accordéon, conçue pour être pliée au format de poche ou au format de page normal.</p>
+<p>Peut se présenter sous une reliure ou un emboîtage.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les frises en accordéon.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>fascicule</p>
+</td>
+<td>
+<p>Unité matérielle réunissant un certain nombre de feuillets et faisant partie d’un ensemble dont elle ne peut être dissociée.</p>
+<p>Les fascicules peuvent être :</p>
+<ul class="listeapuces2">
+	<li>publiés simultanément sous un même emboîtage ;</li>
+	<li>publiés successivement mais destinés à être réunis et reliés dans un seul et même volume.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Feuille" data-tc-id="w-0.13022222384243043"></a> feuille</p>
+</td>
+<td>
+<p>Morceau plat de matériau fin (papier, plastique, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>fiche</p>
+</td>
+<td>
+<p>Voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Carte"><em>carte</em></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>film photographique</p>
+</td>
+<td>
+<p>Pellicule de film photographique négatif sur support transparent, sans autre information.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>globe</p>
+</td>
+<td>
+<p>Objet de forme sphérique, généralement monté sur un axe incliné, constitué par la représentation réduite et en trois dimensions de la Terre ou d’un autre corps céleste approximativement sphérique (comme une planète, une étoile, un satellite naturel), ou par une représentation sphérique de la voûte céleste (étoiles et constellations).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>kit</p>
+</td>
+<td>
+<p>Composants à assembler après achat.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les puzzles ;</li>
+	<li>les découpages à monter.</li>
+</ul>
+<p>Ne pas confondre avec une ressource multimédia multi-supports pour laquelle les différents supports sont détaillés.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>maquette</p>
+</td>
+<td>
+<p>Représentation en trois dimensions et à échelle généralement réduite d’une construction, d’un appareil, d’un décor, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a id="Matrice" data-tc-id="w-0.1867274961433545"></a> matrice</p>
+</td>
+<td>
+<p>Objet destiné à réaliser une impression par encrage ou à fabriquer un autre objet.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les éléments d’impression (plaque de cuivre, pierre lithographique, etc.). Un élément d’impression peut être en relief, en creux, plat ou en pochoir ;</li>
+	<li>les matrices de disques ;</li>
+	<li>les matrices d’objets numismatiques.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>objet</p>
+</td>
+<td>
+<p>Artefact tridimensionnel (ou réplique d’un artefact) ou objet naturel.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>objet numismatique</p>
+</td>
+<td>
+<p>Pièce de métal ou d’un autre matériau, ayant généralement la forme d’un disque, portant des empreintes (inscriptions, images) marquées sur sa surface.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les monnaies ;</li>
+	<li>les médailles ;</li>
+	<li>les jetons ;</li>
+	<li>les insignes.</li>
+</ul>
+<p>Pour le papier monnaie, voir <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Feuille"><em>feuille</em></a><em>.</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>panneau</p>
+</td>
+<td>
+<p>Élément plan de taille moyenne à très grande, souvent de forme parallélépipédique, fabriqué dans différents matériaux.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>panneau dépliant</p>
+</td>
+<td>
+<p>Panneau conçu pour se déplier ou s’ouvrir.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>plaque</p>
+</td>
+<td>
+<p>Morceau plat et peu épais de matériau rigide (carton, bois, métal, plastique, celluloïd, etc.), généralement de petite taille ou de taille moyenne.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les magnets.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>plaque photographique</p>
+</td>
+<td>
+<p>Plaque en verre ou en métal utilisée comme support d’une photographie négative ou positive.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les daguerréotypes ;</li>
+	<li>les autochromes ;</li>
+	<li>les plaques de verre.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>plateau de jeu</p>
+</td>
+<td>
+<p>Support plat et rigide portant des inscriptions ou des images et servant de socle pour un jeu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rouleau</p>
+</td>
+<td>
+<p>Métrage de matériau enroulé (papier, parchemin, tissu, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rouleau de film photographique</p>
+</td>
+<td>
+<p>Pellicule de film photographique négatif sur support transparent, enroulé sur lui-même.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>tableau à feuilles mobiles</p>
+</td>
+<td>
+<p>Dispositif à charnière maintenant au moins deux feuilles et conçu pour une utilisation sur chevalet.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>transparent</p>
+</td>
+<td>
+<p>Feuille de matériau transparent (avec ou sans monture de protection) comportant une image et/ou du texte.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>volume</p>
+</td>
+<td>
+<p>Unité matérielle réunissant sous une même couverture un certain nombre de feuillets ou de cahiers dont la reliure constitue un dos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="Stereoscopique">
+<h3>Supports stéréoscopiques</h3>
+<table border>
+<tbody>
+<tr>
+<td>Supports stéréoscopiques</td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>carte stéréoscopique</p>
+</td>
+<td>
+<p>Feuille de papier généralement montée sur carton, comportant une double vue permettant un visionnage en relief.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>disque stéréoscopique</p>
+</td>
+<td>
+<p>Disque avec des ouvertures sur sa circonférence, contenant des images fixes montées en paires, et conçu pour être utilisé avec une visionneuse stéréoscopique.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>plaque stéréoscopique</p>
+</td>
+<td>
+<p>Plaque de verre ou de métal, comportant une double vue permettant un visionnage en relief.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>les autochromes stéréoscopiques ;</li>
+	<li>les daguerréotypes stéréoscopiques.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="Video">
+<h3>Supports vidéo</h3>
+<table border>
+<tbody>
+<tr>
+<td><strong><a id="supports_videos" data-tc-id="w-0.0457849143239939"></a>Supports vidéo</strong></td>
+<td><strong>Définition</strong></td>
+</tr>
+<tr>
+<td>
+<p>Vidéo</p>
+</td>
+<td>
+<p>Vidéo – sans informations détaillées.</p>
+<p><em>Terme générique</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>bande vidéo</p>
+</td>
+<td>
+<p>Bobine ouverte contenant un métrage de bande magnétique sur laquelle sont enregistrés des signaux électriques qui peuvent être convertis en images animées à l’aide d’un appareil de lecture spécifique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Bande 2 pouces Ampex (1956-1975) ;</li>
+	<li>Bande 1 pouce A ou IVC ;</li>
+	<li>Bande 1 pouce B (Bosch, 1976, SECAM) ;</li>
+	<li>Bande 1 pouce C (Sony, 1976, PAL) ;</li>
+	<li>Bande ½ pouce EIAJ (Sony, 1967) ;</li>
+	<li>Bande ¼ pouce AKAI.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Blu-ray vidéo</p>
+</td>
+<td>
+<p>Disque optique haute définition, format Blu-ray, contenant des données vidéo (Sony, 2006).</p>
+<p>Variante :</p>
+<ul class="listeapuces2">
+	<li>BD (abréviation de Blu-ray disc).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>cassette vidéo</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique généralement enroulée sur deux noyaux jumelés, qui constitue le support d’un enregistrement vidéo analogique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Betacam (½ pouce, Sony, 1982) ;</li>
+	<li>Betacam SP (½ pouce, Sony, 1986) ;</li>
+	<li>Betamax (½ pouce, Sony, 1975) ;</li>
+	<li>BVU (Broadcast Video Unit) (¾ pouce, Sony, 1978) ;</li>
+	<li>BVU SP (¾ pouce, Sony) ;</li>
+	<li>HI 8 (8 mm, Sony, 1989, son numérique) ;</li>
+	<li>S-VHS (½ pouce, Matsushita, 1987, son en qualité hifi) ;</li>
+	<li>U-matic (¾ pouce, Sony, 1971, 2 tailles) ;</li>
+	<li>U-matic SP (¾ pouce, Sony) ;</li>
+	<li>V 2000 (½ pouce, Philips, 1979) ;</li>
+	<li>VCR (½ pouce, Philips, 1972) ;</li>
+	<li>VHS (½ pouce, JVC, 1976) ;</li>
+	<li>VHS C (pour caméscope, plus petite) ;</li>
+	<li>8 mm (ou Video 8) (1985).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>cassette vidéo numérique</p>
+</td>
+<td>
+<p>Boîtier scellé contenant une bande magnétique enroulée sur deux noyaux jumelés, qui constitue le support d’un enregistrement vidéo numérique.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>Betacam digital (½ pouce, Sony, 1993, MJPEG) ;</li>
+	<li>Betacam SX (½ pouce, Sony, 1996) ;</li>
+	<li>IMX (½ pouce, 2001) ;</li>
+	<li>D1 (¾ pouce, Sony, 1986) ;</li>
+	<li>D2 à D5 (¾ pouce, Panasonic) ;</li>
+	<li>DVC DV (¼ pouce, Sony, 1995) ;</li>
+	<li>DVCAM (¼ pouce, Sony, 1995) ;</li>
+	<li>DVCPRO (¼ pouce, Panasonic, 1998) ;</li>
+	<li>HDV (¼ pouce, Sony, 2003) ;</li>
+	<li>HDCAM (½ pouce, Sony, 1997) ;</li>
+	<li>HDCAM SR (½ pouce, Sony, 2003);</li>
+	<li>8 mm Digital 8 (8 mm, Sony, 1999).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>disque vidéo</p>
+</td>
+<td>
+<p>Disque optique contenant des données vidéo analogiques et des pistes sonores analogiques ou numériques.</p>
+<p>Comprend :</p>
+<ul class="listeapuces2">
+	<li>CD-vidéo (CDV) ;</li>
+	<li>LaserDisc (Philips 1978-1980) ;</li>
+	<li>Laservision.</li>
+</ul>
+<p>Ne pas confondre avec <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#Video_CD"><em>vidéo CD</em></a> (VCD), ni avec <a href="https://code.rdafr.fr/entite/manifestation/description-des-supports-materiels/type-de-support/#CDTV"><em>CDTV</em></a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DVD vidéo</p>
+</td>
+<td>
+<p>Disque optique de type DVD (Digital Versatile Disc, c’est-à-dire Disque numérique polyvalent) contenant des données vidéo (Sony, 1995).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HD DVD</p>
+</td>
+<td>
+<p>DVD (Digital Versatile Dis
+</section>
+</body>
+</html>
+ 
+

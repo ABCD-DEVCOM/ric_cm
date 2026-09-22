@@ -1,0 +1,12 @@
+{
+    "name": "Records in Contexts (RiC-CM)",
+    "slug": "ric_cm",
+    "version": "1.0.0",
+    "description": "Archiving module based on the ICA RiC-CM standard. It includes the management of entities and controlled vocabularies.",
+    "entry": "index.php",
+    "hooks": [ 
+        "abcd_topbar_modules",
+        "abcd_after_save_record"
+],
+"config_bridge": true
+}

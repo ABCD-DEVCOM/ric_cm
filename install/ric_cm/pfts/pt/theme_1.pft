@@ -1,0 +1,273 @@
+'<style>
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+:root {
+    /* Palette bicolore : Bleu Nuit & Cyan */
+    --bleu-nuit: #0f172a;
+    --bleu-nuit-secondaire: #1e293b;
+    --cyan-accent: #0284c7;
+    --cyan-clair: #e0f2fe;
+    --cyan-hover: #0369a1;
+    
+    --texte: #334155;
+    --texte-doux: #64748b;
+    --surface: #ffffff;
+    --fond-alt: #f8fafc;
+    --ligne: #e2e8f0;
+}
+
+.ric-wrap {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 1600px;
+    margin: 10px auto;
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid var(--ligne);
+    color: var(--texte);
+}
+
+/* En-tête Bleu Nuit */
+.ric-entete {
+    background: linear-gradient(135deg, var(--bleu-nuit) 0%, var(--bleu-nuit-secondaire) 100%);
+    color: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--cyan-accent);
+}
+
+.ric-entete-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ric-entete-brand i {
+    color: var(--cyan-accent);
+    font-size: 18px;
+}
+
+.ric-entete-titre {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.ric-entete-sous {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* Tables et cellules compactes */
+.ric-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+}
+
+.ric-table td {
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--ligne);
+    vertical-align: top;
+}
+
+.ric-table tr:hover td {
+    background: var(--fond-alt);
+}
+
+/* Bandeaux de sections déclinés dans la palette bicolore */
+.ric-section {
+    padding: 6px 12px !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #ffffff !important;
+    border-bottom: none !important;
+}
+
+.ric-section-attributs { background: linear-gradient(90deg, var(--bleu-nuit), var(--bleu-nuit-secondaire)) !important; }
+.ric-section-relations { background: linear-gradient(90deg, var(--cyan-accent), #0284c7) !important; }
+.ric-section-inverses  { background: linear-gradient(90deg, #0369a1, var(--cyan-accent)) !important; }
+.ric-section-fichiers  { background: linear-gradient(90deg, var(--bleu-nuit-secondaire), #334155) !important; }
+.ric-section-notice    { background: linear-gradient(90deg, var(--cyan-accent), var(--bleu-nuit-secondaire)) !important; }
+
+/* Grille 2 colonnes */
+.ric-rel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--ligne);
+}
+
+.ric-rel-left {
+    border-right: 1px solid var(--ligne);
+}
+
+/* Fichiers */
+.ric-file-row td { background: var(--cyan-clair); }
+.ric-file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--cyan-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+.ric-file-link:hover {
+    color: var(--cyan-hover);
+    text-decoration: underline;
+}
+
+/* Traçabilité */
+.ric-audit-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.ric-log-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--cyan-clair);
+    color: var(--cyan-hover);
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.ric-log-date {
+    color: var(--texte-doux);
+    font-size: 11.5px;
+}
+
+/* Bloc Signature */
+.ric-signature-block {
+    text-align: right;
+    font-size: 0.75rem;
+    color: var(--texte-doux);
+    padding: 8px 16px;
+    background: var(--fond-alt);
+    border-top: 1px solid var(--ligne);
+}
+
+.ric-signature-block a {
+    color: var(--cyan-accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ric-signature-block a:hover {
+    text-decoration: underline;
+}
+</style>',
+
+'<div class="ric-wrap">',
+
+'<!-- EN-TÊTE DYNAMIQUE BICOLORE -->',
+'<div class="ric-entete">',
+    '<div class="ric-entete-brand">',
+        '<i class="fa-solid fa-sitemap"></i>',
+        '<div>',
+            '<span class="ric-entete-titre">Archival record — RiC-CM</span> ',
+            '<span class="ric-entete-sous">• Records in Contexts</span>',
+        '</div>',
+    '</div>',
+    '<div>',
+        '<span class="ric-log-badge"><i class="fa-solid fa-circle-check"></i> ',
+        if p(v128[1]^f) then 
+            v128[1]^f, ' ', v128[1]^l, 
+            if npost('RI070_',v2) > 0 and npost('RI072_',v2) > 0 then 
+                ' (', ref(l('RI070_',v2), v129*6.4), ' - ', ref(l('RI072_',v2), v129*6.4), ') '
+            else
+                if npost('RI070_',v2) > 0 then 
+                    ' (', ref(l('RI070_',v2), v129*6.4), ' - )' 
+                fi 
+            fi  
+        else 
+            if p(v128[1]^o) then 
+                v128[1]^o,
+                if npost('RI069_',v2) > 0 and npost('RI071_',v2) > 0 then 
+                    ' (', ref(l('RI069_',v2), v129*6.4), ' - ', ref(l('RI071_',v2), v129*6.4), ') '
+                else
+                    if npost('RI069_',v2) > 0 then 
+                        ' (', ref(l('RI071_',v2), v129*6.4), ' - )' 
+                    fi 
+                fi  
+            fi 
+        fi,
+        '</span>',
+    '</div>',
+'</div>',
+
+'<!-- 1. ATTRIBUTES AND GENERAL DESCRIPTION  -->',
+'<table class="ric-table">',
+    '<tr><td colspan=4 class="ric-section ric-section-attributs"><i class="fa-solid fa-list"></i> Entity attributes</td></tr>',
+    @attributes_en.pft,
+'</table>',
+
+'<!-- 2. RELATIONS AND INVERSE RELATIONS (2 COLONNES) -->',
+'<div class="ric-rel-grid">',
+    '<div class="ric-rel-left">',
+        '<table class="ric-table">',
+            '<tr><td colspan=4 class="ric-section ric-section-relations"><i class="fa-solid fa-diagram-project"></i> Entity relations</td></tr>',
+            @relations_en.pft,
+        '</table>',
+    '</div>',
+    '<div>',
+        '<table class="ric-table">',
+            '<tr><td colspan=4 class="ric-section ric-section-inverses"><i class="fa-solid fa-arrow-rotate-left"></i> Inverse relations</td></tr>',
+            @inverse_relations_en.pft,
+        '</table>',
+    '</div>',
+'</div>',
+
+'<!-- 3. FILES -->',
+'<table class="ric-table">',
+    if p(v18) then
+        '<tr><td colspan=4 class="ric-section ric-section-fichiers"><i class="fa-solid fa-file-lines"></i> Version numérique (', f(nocc(v18),1,0), if nocc(v18)=1 then ' fichier)' else ' fichiers)' fi, '</td></tr>',
+        (
+            '<tr class="ric-file-row">',
+                '<td style="width:30px; text-align:center;">', @file_icon.pft, '</td>',
+                '<td colspan=3><a href="/docs/ric_cm/uploaded_files/', v18^f, '" target="_blank" title="Ouvrir le fichier" class="ric-file-link"><i class="fa-solid fa-arrow-up-right-from-square"></i>', v18^t, '</a></td>',
+            '</tr>'
+        /)
+    fi,
+
+    if p(v20) then 
+        '<tr><td colspan=4 class="ric-section ric-section-notice"><i class="fa-solid fa-clock-rotate-left"></i> Notice descriptive RiC-CM</td></tr>',
+        '<tr>',
+            '<td colspan=4>',
+                '<div class="ric-audit-inline">',
+                    '<span><i class="fa-solid fa-user-pen" style="color:var(--cyan-accent);"></i> <strong>Créée par :</strong> ',
+                    '<span class="ric-log-badge"><i class="fa-solid fa-user"></i>', ref(['acces']l(['acces']'LOG_',mpu, v20[1]^o),mpl, v10,' (',v20, ') '), '</span>',
+                    s1:=(ref(['acces']l(['acces']'LOG_',mpu, v20[1]^o),mpl, v20)),
+                    s2:=(ref(l('UID_',(s1)), v2)),
+                    '<span class="ric-log-date">[', (s2), '], le ', v20[1]^d*6.2, '-', v20[1]^d*4.2, '-', v20[1]^d*0.4, mpl ' à ' v20[1]^d*9.8, '</span></span>',
+
+                    if nocc(v20) >= 2 then
+                        '<span style="border-left:1px solid var(--ligne); padding-left:15px;"><i class="fa-solid fa-pen-to-square" style="color:var(--cyan-accent);"></i> <strong>Modifications :</strong> ',
+                        (
+                            '<span class="ric-log-badge"><i class="fa-solid fa-user"></i>', ref(['acces']l(['acces']'LOG_',mpu, v20^o),mpl, v10,' (',v20, ') '), '</span>',
+                            s1:=(ref(['acces']l(['acces']'LOG_',mpu, v20^o),mpl, v20)),
+                            s2:=(ref(l('UID_',s1), v2)),
+                            '<span class="ric-log-date">[', s2, '], le ', v20^d*6.2, '-', v20^d*4.2, '-', v20^d*0.4, mpl ' à ' v20^d*9.8, '</span> '
+                        /),
+                        '</span>'
+                    fi,
+                '</div>',
+            '</td>',
+        '</tr>'
+    fi,
+'</table>',
+
+'</div>'

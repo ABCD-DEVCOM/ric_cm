@@ -1,0 +1,22 @@
+'Entity type : '
+s1:=('Call number : ')
+
+select s(v1) 
+	case 'RiC-E03':	'Record Set - ', s1, v2
+	case 'RiC-E04': 'Record - ', s1, v2
+	case 'RiC-E05': 'Record Part - ', s1, v2
+	case 'RiC-E06': 'Instanciation - ', s1, v2
+	case 'RiC-E08': 'Person - ', s1, v2
+	case 'RiC-E10': 'Family - ', s1, v2
+	case 'RiC-E11': 'Corporate Body - ', s1, v2
+	case 'RiC-E12': 'Position - ', s1, v2
+	case 'RiC-E13': 'Mechanism - ', s1, v2
+	case 'RiC-E14': 'Event - ', s1, v2
+	case 'RiC-E15': 'Activity - ', s1, v2
+	case 'RiC-E16': 'Rule - ', s1, v2
+	case 'RiC-E17': 'Mandate - ', s1, v2
+	case 'RiC-E18': 'Place - ', s1, v2
+	case 'RiC-E22': 'Date - ', s1, v2
+endsel 
+
+

@@ -1,0 +1,37 @@
+if p(v128[1]^f) then 
+	v128[1]^f, ' ', v128[1]^l 
+	if npost('RI070_',v2) > 0 and npost('RI072_',v2) > 0 then 
+		' (', ref(l('RI070_',v2), v129*6.4), ' -  ', ref(l('RI072_',v2), v129*6.4) ') ',
+	else
+		if npost('RI070_',v2) > 0 then ' (', ref(l('RI070_',v2), v129*6.4), ' - )' fi 
+	fi  
+else 
+	if p(v128[1]^o) then v128[1]^o
+		if npost('RI069_',v2) > 0 and npost('RI071_',v2) > 0 then 
+			' (', ref(l('RI069_',v2), v129*6.4), ' -  ', ref(l('RI071_',v2), v129*6.4) ') ',
+		else
+			if npost('RI069_',v2) > 0 then ' (', ref(l('RI071_',v2), v129*6.4), ' - )' fi 
+		fi  
+	fi 
+fi
+
+/*** In case of more than one occurrences ***/
+if nocc(v128)> 1 then '<br><font size=3>Autres formes du nom : ' fi 
+(if iocc >=2 then 
+	if p(v128^f) then 
+		v128^f, ' ', v128^l 
+		if npost('RI070_',v2) > 0 and npost('RI072_',v2) > 0 then 
+			' (', ref(l('RI070_',v2), v129*6.4), ' -  ', ref(l('RI072_',v2), v129*6.4) ') ',
+		else
+			if npost('RI070_',v2) > 0 then ' (', ref(l('RI070_',v2), v129*6.4), ' - )' fi 
+		fi
+	fi
+	if p(v128^o) then v128^o
+		if npost('RI069_',v2) > 0 and npost('RI070_',v2) > 0 then 
+			' (', ref(l('RI069_',v2), v129*6.4), ' -  ', ref(l('RI070_',v2), v129*6.4) ') ',
+		else
+			if npost('RI069_',v2) > 0 then ' (', ref(l('RI070_',v2), v129*6.4), ' - )' fi 
+		fi  
+	fi	
+fi/)	
+ 

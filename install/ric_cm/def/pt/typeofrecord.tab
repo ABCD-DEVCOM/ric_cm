@@ -1,0 +1,16 @@
+1 
+recordset.fmt|RiC-E03||RiC-E03 Conjunto de Documentos
+record.fmt|RiC-E04||RiC-E04 Documento
+recordpart.fmt|RiC-E05||RiC-E05 Parte de Documento
+instantiation.fmt|RiC-E06||RiC-E06 Instanciação
+person.fmt|RiC-E08||RiC-E08 Pessoa
+family.fmt|RiC-E10||RiC-E10 Família
+body.fmt|RiC-E11||RiC-E11 Entidade Coletiva
+position.fmt|RiC-E12||RiC-E12 Cargo
+mechanism.fmt|RiC-E13||RiC-E13 Mecanismo
+event.fmt|RiC-E14||RiC-E14 Evento
+activity.fmt|RiC-E15||RiC-E15 Atividade
+rule.fmt|RiC-E16||RiC-E16 Regra
+mandate.fmt|RiC-E17||RiC-E17 Mandato
+date.fmt|RiC-E18||RiC-E18 Data
+place.fmt|RiC-E22||RiC-E22 Local

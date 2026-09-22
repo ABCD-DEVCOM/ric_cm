@@ -1,0 +1,248 @@
+'<table border=1 width=100%>'
+  /*** Attributes of entity ***/
+	'<tr><th colspan=4><font face=arial size=6><align=center>', (if p(v128^f) then v128^f, ' ', v128^l else v128^o fi/'<br>'), '<font size=2>', @ric_entity.pft, '</th></tr>'
+	if p(v143) then '<tr><td>RiC-A43 General description</td><td colspan=3>', v143, '</td></tr>' fi/
+	if p(v122) then '<tr><td>RiC-A22 Identifier</td><td colspan=3>', ('<li>', v122^i, ' (', v122^e,', ', v122^s, ', ', v122^c, ') <br>'/), '</td></tr>' fi/
+	if p(v103) then '<tr><td>RiC-A03 Authenticity note</td><td colspan=3>', v103+| - |, '</td></tr>' fi/
+	if p(v104) then '<tr><td>RiC-A04 Carrier Extent</td><td>', v104+| - |, '</td><td>',if p(v105) then 'RiC-A05 Carrier Type', v105+| - |, fi '</td></tr>' fi/
+	if p(v107) then '<tr><td>RiC-A07 Classification</td><td colspan=2>', v107+| - | '</td></tr><br>' fi/
+	if p(v108) then '<tr><td>RiC-A08 Conditions of access</td><td colspan=2>', v108+| - | '</td></tr>' fi/
+	if p(v109) then '<tr><td>RiC-A09 Conditions of use</td><td colspan=2>', v109+| - | '</td></tr>' fi/
+	if p(v110) then '<tr><td>RiC-A10 Content type</td><td colspan=2>', v110+| - | '</td></tr>' fi/
+	if p(v118) then '<tr><td>RiC-A18 Event Type</td><td colspan=2>', v118 '</td></tr>' fi/
+	if p(v121) then '<tr><td>RiC-A21 History</td><td colspan=2>', v121+| - | '</td></tr>' fi/
+	if p(v102) then '<tr><td>RiC-A02 Activity Type</td><td colspan=2>', v102 '</td></tr>' fi/
+	if p(v123) then '<tr><td>RiC-A23 Instantiation Extent</td><td colspan=2>', v123 '</td></tr>' fi/
+	if p(v124) then '<tr><td>RiC-A24 Integrity Note</td><td colspan=2>', v124+| - | '</td></tr>' fi/
+	if p(v125) then '<tr><td>RiC-A25 Language</td><td colspan=2>', v125+| - | '</td></tr>' fi/
+	if p(v126) then '<tr><td>RiC-A26 Legal status</td><td colspan=2>', v126+| - | '</td></tr>' fi/
+	if p(v115) then '<tr><td>RiC-A15 Demographic Group</td><td colspan=2>', v115 '</td></tr>' fi/
+	if p(v120) then '<tr><td>RiC-A20 Family Type</td><td colspan=2>', v120 '</td></tr>' fi/
+	if p(v112) then '<tr><td>RiC-A12 Corporate Body Type</td><td colspan=2>', v112+ | - |, '</td></tr>' fi/
+	if p(v130) then '<tr><td>RiC-A30 Occupation Type</td><td colspan=2>', v130 '</td></tr>' fi/
+	if p(v131) then '<tr><td>RiC-A31 Physical Characteristics Note</td><td colspan=2>', v131 '</td></tr>' fi/
+	if p(v133) then '<tr><td>RiC-A33 Production Technique</td><td colspan=2>', v133 '</td></tr>' fi/
+	if p(v134) then '<tr><td>RiC-A34 Quality of Representation Note</td><td colspan=2>', v134 '</td></tr>' fi/
+	if p(v135) then '<tr><td>RiC-A35 Record Resource Extent</td><td colspan=2>', v135+| - | '</td></tr>' fi/
+	if p(v137) then '<tr><td>RiC-A37 Representation Type</td><td colspan=2>', v137 '</td></tr>' fi/
+	if p(v138) then '<tr><td>RiC-A38 Scope and content</td><td colspan=2>', v138+| - | '</td></tr>' fi/
+	if p(v139) then '<tr><td>RiC-A39 State</td><td colspan=2>', v139+| - | '</td></tr>' fi/
+	if p(v140) then '<tr><td>RiC-A40 Structure</td><td colspan=2>', v140+| - | '</td></tr>' fi/
+	if p(v101) then '<tr><td>RiC-A01 Accruals</td><td colspan=2>', v101+| - | '</td></tr>' fi/
+	if p(v117) then '<tr><td>RiC-A17 Documentary Form Type</td><td colspan=2>', v117+| - | '</td></tr>' fi/
+	if p(v136) then '<tr><td>RiC-A36 Record Set Type</td><td colspan=2>', v136 '</td></tr>' fi/
+	if p(v141) then '<tr><td>RiC-A41 Technical Characteristics</td><td colspan=2>', v141 '</td></tr>' fi/
+	if p(v145) then '<tr><td>RiC-A45 Rule Type</td><td colspan=2>', v145 '</td></tr>' fi/
+	if p(v144) then '<tr><td>RiC-A44 Mandate Type</td><td colspan=2>', v144 '</td></tr>' fi/
+	if p(v113) then '<tr><td>RiC-A13 Date Qualifier</td><td colspan=2>', v113 '</td></tr>' fi/
+	if p(v142) then '<tr><td>RiC-A42 Date Type</td><td colspan=2>', v142 '</td></tr>' fi/
+	if p(v119) then '<tr><td>RiC-A19 Expressed Date</td><td colspan=2>', v119 '</td></tr>' fi/
+	if p(v129) then '<tr><td>RiC-A29 Normalized Date</td><td colspan=2>', v129 '</td></tr>' fi/
+	if p(v111) then '<tr><td>RiC-A11 Coordinates</td><td colspan=2>', v111 '</td></tr>' fi/
+	if p(v127) then '<tr><td>RiC-A27 Location</td><td colspan=2>', v127 '</td></tr>' fi/
+	if p(v132) then '<tr><td>RiC-A32 Place Type</td><td colspan=2>', v132 '</td></tr>' fi/
+	if p(v17) then '<tr><td>Keywords</td><td colspan=2>', v17+| - |, '</td></tr>' fi/
+  
+  /*** Relations of entity ***/
+	'<tr><td colspan=3 bgcolor=cyan>Relations</td></tr>'
+	if p(v201) then ('<tr><td></td><td>RiC-R001 is related to <td>', v201^1, ' - ', ref(l(|ID_|v201^1), @name.pft,), '***', '</td></tr>'/) fi/
+	if p(v202) then ('<tr><td></td><td>RiC-R002 has or had part <td>', v202^1, ' - ', ref(l(|ID_|v202^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v203) then ('<tr><td></td><td>RiC-R003 has or had constituent <td>', v203^1, ' - ', ref(l(|ID_|v203^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v204) then ('<tr><td></td><td>RiC-R004 has or had component <td>', v204^1, ' - ', ref(l(|ID_|v204^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v205) then ('<tr><td></td><td>RiC-R005 has or had subdivision <td>', v205^1, ' - ',, ref(l(|ID_|v205^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v206) then ('<tr><td></td><td>RiC-R006 has or had subevent <td>', v206^1, ' - ', ref(l(|ID_|v206^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v207) then ('<tr><td></td><td>RiC-R007 contains or contained <td>', v207^1, ' - ', ref(l(|ID_|v207^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v208) then ('<tr><td></td><td>RiC-R008 precedes or preceded <td>', v208^1, ' - ', ref(l(|ID_|v208^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v209) then ('<tr><td></td><td>RiC-R009 precedes in time <td>', v209^1, ' - ', ref(l(|ID_|v209^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v210) then ('<tr><td></td><td>RiC-R010 is original of <td>', v210^1, ' - ', ref(l(|ID_|v210^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v211) then ('<tr><td></td><td>RiC-R011 is draft of <td>', v211^1, ' - ', ref(l(|ID_|v211^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v212) then ('<tr><td></td><td>RiC-R012 has copy <td>', v212^1, ' - ',ref(l(|ID_|v212^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v213) then ('<tr><td></td><td>RiC-R013 has reply <td>', v213^1, ' - ', ref(l(|ID_|v213^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v214) then ('<tr><td></td><td>RiC-R014 has or had derived instantiation <td>', v214^1, ' - ', ref(l(|ID_|v214^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v215) then ('<tr><td></td><td>RiC-R015 migrated into <td>', v215^1, ' - ', ref(l(|ID_|v215^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v216) then ('<tr><td></td><td>RiC-R016 has successor <td>', v216^1, ' - ', ref(l(|ID_|v216^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v217) then ('<tr><td></td><td>RiC-R017 has descendant <td>', v217^1, ' - ', ref(l(|ID_|v217^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v218) then ('<tr><td></td><td>RiC-R018 has child <td>', v218^1, ' - ', ref(l(|ID_|v218^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v219) then ('<tr><td></td><td>RiC-R019 has or had subject <td>', v219^1, ' - ',ref(l(|ID_|v219^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v220) then ('<tr><td></td><td>RiC-R020 has or had main subject <td>', v220^1, ' - ', ref(l(|ID_|v220^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v221) then ('<tr><td></td><td>RiC-R021 describes or described <td>', v221^1, ' - ', ref(l(|ID_|v221^1), @name.pft,), '***', '</td></tr>'/) fi/
+	if p(v222) then ('<tr><td></td><td>RiC-R022 is record resource associated with record resource <td>', v222^1, ' - ', ref(l(|ID_|v222^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v223) then ('<tr><td></td><td>RiC-R023 has genetic link to record resource <td>', v223^1, ' - ', ref(l(|ID_|v223^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v224) then ('<tr><td></td><td>RiC-R024 includes or included <td>', v224^1, ' - ', ref(l(|ID_|v224^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v225) then ('<tr><td></td><td>RiC-R025 has or had instantiation <td>', v225^1, ' - ', ref(l(|ID_|v225^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v226) then ('<tr><td></td><td>RiC-R026 has provenance <td>', v226^1, ' - ', ref(l(|ID_|v226^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v227) then ('<tr><td></td><td>RiC-R027 has creator <td>', v227^1, ' - ', ref(l(|ID_|v227^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v228) then ('<tr><td></td><td>RiC-R028 has accumulator <td>', v228^1, ' - ',ref(l(|ID_|v228^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v229) then ('<tr><td></td><td>RiC-R029 has receiver <td>', v229^1, ' - ', ref(l(|ID_|v229^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v230) then ('<tr><td></td><td>RiC-R030 has collector <td>', v230^1, ' - ',ref(l(|ID_|v230^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v231) then ('<tr><td></td><td>RiC-R031 has sender <td>', v231^1, ' - ', ref(l(|ID_|v231^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v232) then ('<tr><td></td><td>RiC-R032 has addressee <td>', v232^1, ' - ', ref(l(|ID_|v232^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v233) then ('<tr><td></td><td>RiC-R033 documents to <td>', v233^1, ' - ', ref(l(|ID_|v233^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v234) then ('<tr><td></td><td>RiC-R034 is instantiation associated with instantiation <td>', v234^1, ' - ', ref(l(|ID_|v234^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v235) then ('<tr><td></td><td>RiC-R035 is functionally equivalent to <td>', v235^1, ' - ', ref(l(|ID_|v235^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v236) then ('<tr><td></td><td>RiC-R036 has or had authority over <td>', v236^1, ' - ', ref(l(|ID_|v236^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v237) then ('<tr><td></td><td>RiC-R037 is or was owner of <td>', v237^1, ' - ', ref(l(|ID_|v237^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v238) then ('<tr><td></td><td>RiC-R038 is or was manager of <td>', v238^1, ' - ',, ref(l(|ID_|v238^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v239) then ('<tr><td></td><td>RiC-R039 is or was holder of <td>', v239^1, ' - ', ref(l(|ID_|v239^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v240) then ('<tr><td></td><td>RiC-R040 is or was holder of intellectual property rights of <td>', v240^1, ' - ', ref(l(|ID_|v240^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v241) then ('<tr><td></td><td>RiC-R041 is or was controller of <td>', v241^1, ' - ', ref(l(|ID_|v241^1), @name.pft,), '***', '</td></tr>'/) fi/
+	if p(v242) then ('<tr><td></td><td>RiC-R042 is or was leader of <td>', v242^1, ' - ', ref(l(|ID_|v242^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v243) then ('<tr><td></td><td>RiC-R043 has or had constituent <td>', v243^1, ' - ', ref(l(|ID_|v243^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v244) then ('<tr><td></td><td>RiC-R044 is agent associated with agent <td>', v244^1, ' - ', ref(l(|ID_|v244^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v245) then ('<tr><td></td><td>RiC-R045 has or had subordinate <td>', v245^1, ' - ',, ref(l(|ID_|v245^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v246) then ('<tr><td></td><td>RiC-R046 has or had work relation with <td>', v246^1, ' - ', ref(l(|ID_|v246^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v247) then ('<tr><td></td><td>RiC-R047 has family association with <td>', v247^1, ' - ', ref(l(|ID_|v207^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v248) then ('<tr><td></td><td>RiC-R048 has sibling <td>', v248^1, ' - ', ref(l(|ID_|v248^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v249) then ('<tr><td></td><td>RiC-R049 has or had spouse <td>', v249^1, ' - ', ref(l(|ID_|v249^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v250) then ('<tr><td></td><td>RiC-R050 knows of <td>', v250^1, ' - ', ref(l(|ID_|v250^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v251) then ('<tr><td></td><td>RiC-R051 knows <td>', v251^1, ' - ', ref(l(|ID_|v251^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v252) then ('<tr><td></td><td>RiC-R052 has or had correspondent <td>', v252^1, ' - ',ref(l(|ID_|v252^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v253) then ('<tr><td></td><td>RiC-R053 has or had teacher <td>', v253^1, ' - ', ref(l(|ID_|v253^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v254) then ('<tr><td></td><td>RiC-R054 occupies or occupied <td>', v254^1, ' - ', ref(l(|ID_|v254^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v255) then ('<tr><td></td><td>RiC-R055 has or had member <td>', v255^1, ' - ', ref(l(|ID_|v255^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v256) then ('<tr><td></td><td>RiC-R056 exists or existed in <td>', v256^1, ' - ', ref(l(|ID_|v256^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v257) then ('<tr><td></td><td>RiC-R057 is event associated with <td>', v257^1, ' - ', ref(l(|ID_|v257^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v258) then ('<tr><td></td><td>RiC-R058 has or had participant <td>', v258^1, ' - ', ref(l(|ID_|v258^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v259) then ('<tr><td></td><td>RiC-R059 affects or affected <td>', v259^1, ' - ',ref(l(|ID_|v259^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v260) then ('<tr><td></td><td>RiC-R060 is or was performed by <td>', v260^1, ' - ', ref(l(|ID_|v260^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v261) then ('<tr><td></td><td>RiC-R061 results or resulted in <td>', v261^1, ' - ', ref(l(|ID_|v261^1), @name.pft,), '***', '</td></tr>'/) fi/
+	if p(v262) then ('<tr><td></td><td>RiC-R062 is rule associated with <td>', v262^1, ' - ', ref(l(|ID_|v262^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v263) then ('<tr><td></td><td>RiC-R063 regulates or regulated <td>', v263^1, ' - ', ref(l(|ID_|v263^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v264) then ('<tr><td></td><td>RiC-R064 is or was expressed by <td>', v264^1, ' - ', ref(l(|ID_|v264^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v265) then ('<tr><td></td><td>RiC-R065 issued by <td>', v265^1, ' - ', ref(l(|ID_|v225^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v266) then ('<tr><td></td><td>RiC-R066 is or was enforced by <td>', v266^1, ' - ', ref(l(|ID_|v266^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v267) then ('<tr><td></td><td>RiC-R067 authorizes <td>', v267^1, ' - ', ref(l(|ID_|v267^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v268) then ('<tr><td></td><td>RiC-R068 is date associated with <td>', v268^1, ' - ', ref(l(|ID_|v268^1), v128[1]), '***',  '</td></tr>'/) fi/
+	if p(v269) then ('<tr><td></td><td>RiC-R069 is beginning date of <td>', v269^1, ' - ', ref(l(|ID_|v269^1), v128[1]), '***',  '</td></tr>'/) fi/
+	if p(v270) then ('<tr><td></td><td>RiC-R070 is birth date of <td>', v270^1, ' - ',ref(l(|ID_|v270^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v271) then ('<tr><td></td><td>RiC-R071 is end date of <td>', v271^1, ' - ', ref(l(|ID_|v271^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v272) then ('<tr><td></td><td>RiC-R072 is death date of <td>', v272^1, ' - ', ref(l(|ID_|v272^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v273) then ('<tr><td></td><td>RiC-R073 is modification date of <td>', v273^1, ' - ', ref(l(|ID_|v273^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v274) then ('<tr><td></td><td>RiC-R074 is place associated with <td>', v274^1, ' - ', ref(l(|ID_|v274^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v275) then ('<tr><td></td><td>RiC-R075 is or was location of <td>', v275^1, ' - ', ref(l(|ID_|v275^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v276) then ('<tr><td></td><td>RiC-R076 is or was jurisdiction of <td>', v276^1, ' - ', ref(l(|ID_|v276^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v277) then ('<tr><td></td><td>RiC-R077 is or was adjacent to <td>', v277^1, ' - ', ref(l(|ID_|v277^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v278) then ('<tr><td></td><td>RiC-R078 overlaps or overlapped <td>', v278^1, ' - ',, ref(l(|ID_|v278^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v279) then ('<tr><td></td><td>RiC-R079 has author <td>', v279^1, ' - ', ref(l(|ID_|v279^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v280) then ('<tr><td></td><td>RiC-R080 is creation date of <td>', v280^1, ' - ', ref(l(|ID_|v280^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v281) then ('<tr><td></td><td>RiC-R081 is or was creation date of all members of <td>', v281^1, ' - ', ref(l(|ID_|v201^1), @name.pft,), '***', '</td></tr>'/) fi/
+	if p(v282) then ('<tr><td></td><td>RiC-R082 is or was creation date of some members of <td>', v282^1, ' - ', ref(l(|ID_|v202^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v283) then ('<tr><td></td><td>RiC-R083 is or was creation date of most members of <td>', v283^1, ' - ', ref(l(|ID_|v203^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v284) then ('<tr><td></td><td>RiC-R084 is date of occurrence of <td>', v204^1, ' - ', ref(l(|ID_|v204^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v285) then ('<tr><td></td><td>RiC-R085 is within <td>', v285^1, ' - ',, ref(l(|ID_|v285^1), @name.pft,), '***',  '</td></tr>'/) fi/
+	if p(v286) then ('<tr><td></td><td>RiC-R086 intersects <td>', v286^1, ' - ', ref(l(|ID_|v286^1), @name.pft,), '***',  '</td></tr>'/) fi/
+ 
+ /*** Reverse relations of entity ***/
+	'<tr><td colspan=3 bgcolor=tomato>Reverse relations</td></tr>'
+	if npost(|RI001_|v2) > 0 then ('<tr><td></td><td>RiC-RI001 is related to <td>', ref(l(|RI001_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI002_|v2) > 0 then ('<tr><td></td><td>RiC-RI002 is or was part of <td>', ref(l(|RI002_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI003_|v2) > 0 then ('<tr><td></td><td>RiC-RI003 is or was constituent of <td>', ref(l(|RI003_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI004_|v2) > 0 then ('<tr><td></td><td>RiC-RI004 is or was component of <td>', ref(l(|RI004_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI005_|v2) > 0 then ('<tr><td></td><td>RiC-RI005 is or was subdivision of <td>', ref(l(|RI005_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI006_|v2) > 0 then ('<tr><td></td><td>RiC-RI006 is or was subevent of <td>', ref(l(|RI006_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI007_|v2) > 0 then ('<tr><td></td><td>RiC-RI007 is or was contained by <td>', ref(l(|RI007_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI008_|v2) > 0 then ('<tr><td></td><td>RiC-RI008 follows or followed <td>', ref(l(|RI008_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI009_|v2) > 0 then ('<tr><td></td><td>RiC-RI009 follows in time <td>', ref(l(|RI009_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI010_|v2) > 0 then ('<tr><td></td><td>RiC-RI010 has original <td>', ref(l(|RI009_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI011_|v2) > 0 then ('<tr><td></td><td>RiC-RI011 has draft <td>', ref(l(|RI011_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI012_|v2) > 0 then ('<tr><td></td><td>RiC-RI012 is copy of <td>', ref(l(|RI012_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI013_|v2) > 0 then ('<tr><td></td><td>RiC-RI013 is reply to <td>', ref(l(|RI013_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI014_|v2) > 0 then ('<tr><td></td><td>RiC-RI014 is or was derived from instantiation <td>', ref(l(|RI014_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI015_|v2) > 0 then ('<tr><td></td><td>RiC-RI015 migrated from <td>', ref(l(|RI015_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI016_|v2) > 0 then ('<tr><td></td><td>RiC-RI016 is successor of <td>', ref(l(|RI016_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI017_|v2) > 0 then ('<tr><td></td><td>RiC-RI017 has ancestor <td>', ref(l(|RI017_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI018_|v2) > 0 then ('<tr><td></td><td>RiC-RI018 is child of <td>', ref(l(|RI018_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI019_|v2) > 0 then ('<tr><td></td><td>RiC-RI019 is or was subject of <td>', ref(l(|RI019_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI020_|v2) > 0 then ('<tr><td></td><td>RiC-RI020 is or was main subject of <td>', ref(l(|RI020_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI021_|v2) > 0 then ('<tr><td></td><td>RiC-RI021 is or was described by <td>', ref(l(|RI021_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI022_|v2) > 0 then ('<tr><td></td><td>RiC-RI022 is record resource associated with record resource <td>', ref(l(|RI022_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI023_|v2) > 0 then ('<tr><td></td><td>RiC-RI023 has genetic link to record resource <td>', ref(l(|RI023_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI024_|v2) > 0 then ('<tr><td></td><td>RiC-RI024 is or was included in <td>', ref(l(|RI024_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI025_|v2) > 0 then ('<tr><td></td><td>RiC-RI025 is or was instantiation of <td>', ref(l(|RI025_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI026_|v2) > 0 then ('<tr><td></td><td>RiC-RI026 is provenance of <td>', ref(l(|RI026_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI027_|v2) > 0 then ('<tr><td></td><td>RiC-RI027 is creator of <td>', ref(l(|RI027_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI028_|v2) > 0 then ('<tr><td></td><td>RiC-RI028 is accumulator of <td>', ref(l(|RI028_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI029_|v2) > 0 then ('<tr><td></td><td>RiC-RI029 is receiver of <td>', ref(l(|RI029_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI030_|v2) > 0 then ('<tr><td></td><td>RiC-RI030 is collector of <td>', ref(l(|RI030_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI031_|v2) > 0 then ('<tr><td></td><td>RiC-RI031 is sender of <td>', ref(l(|RI031_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI032_|v2) > 0 then ('<tr><td></td><td>RiC-RI032 is addressee of <td>', ref(l(|RI032_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI033_|v2) > 0 then ('<tr><td></td><td>RiC-RI033 documented by <td>', ref(l(|RI033_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI034_|v2) > 0 then ('<tr><td></td><td>RiC-RI034 is instantiation associated with instantiation <td>', ref(l(|RI034_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI035_|v2) > 0 then ('<tr><td></td><td>RiC-RI035 is functionally equivalent to <td>', ref(l(|RI035_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI036_|v2) > 0 then ('<tr><td></td><td>RiC-RI036 is or was under authority of <td>', ref(l(|RI036_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI037_|v2) > 0 then ('<tr><td></td><td>RiC-RI037 has or had owner <td>', ref(l(|RI037_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI038_|v2) > 0 then ('<tr><td></td><td>RiC-RI038 has or had manager <td>', ref(l(|RI038_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI039_|v2) > 0 then ('<tr><td></td><td>RiC-RI039 has or had holder <td>', ref(l(|RI039_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI040_|v2) > 0 then ('<tr><td></td><td>RiC-RI040 has or had intellectual property rights holder <td>', ref(l(|RI040_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI041_|v2) > 0 then ('<tr><td></td><td>RiC-RI041 has or had controller <td>', ref(l(|RI041_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI042_|v2) > 0 then ('<tr><td></td><td>RiC-RI042 has or had leader <td>', ref(l(|RI042_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI043_|v2) > 0 then ('<tr><td></td><td>RiC-RI043 is or was constituent of <td>', ref(l(|RI043_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI044_|v2) > 0 then ('<tr><td></td><td>RiC-RI044 is agent associated with agent <td>', ref(l(|RI044_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI045_|v2) > 0 then ('<tr><td></td><td>RiC-RI045 is or was subordinate to <td>', ref(l(|RI045_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI046_|v2) > 0 then ('<tr><td></td><td>RiC-RI046 has or had work relation with <td>', ref(l(|RI046_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI047_|v2) > 0 then ('<tr><td></td><td>RiC-RI047 has family association with <td>', ref(l(|RI047_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI048_|v2) > 0 then ('<tr><td></td><td>RiC-RI048 has sibling <td>', ref(l(|RI048_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI049_|v2) > 0 then ('<tr><td></td><td>RiC-RI049 has or had spouse <td>', ref(l(|RI49_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI050_|v2) > 0 then ('<tr><td></td><td>RiC-RI050 known by <td>', ref(l(|RI050_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI051_|v2) > 0 then ('<tr><td></td><td>RiC-RI051 knows <td>', ref(l(|RI051_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI052_|v2) > 0 then ('<tr><td></td><td>RiC-RI052 has or had correspondent <td>', ref(l(|RI052_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI053_|v2) > 0 then ('<tr><td></td><td>RiC-RI053 has or had student <td>', ref(l(|RI053_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI054_|v2) > 0 then ('<tr><td></td><td>RiC-RI054 is or was occupied by <td>', ref(l(|RI054_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI055_|v2) > 0 then ('<tr><td></td><td>RiC-RI055 is or was member of <td>', ref(l(|RI055_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI056_|v2) > 0 then ('<tr><td></td><td>RiC-RI056 has or had position <td>', ref(l(|RI056_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI057_|v2) > 0 then ('<tr><td></td><td>RiC-RI057 is associated with event <td>', ref(l(|RI057_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI058_|v2) > 0 then ('<tr><td></td><td>RiC-RI058 is or was participant in <td>', ref(l(|RI058_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI059_|v2) > 0 then ('<tr><td></td><td>RiC-RI059 is or was affected by <td>', ref(l(|RI059_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI060_|v2) > 0 then ('<tr><td></td><td>RiC-RI060 performs or performed <td>', ref(l(|RI060_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI061_|v2) > 0 then ('<tr><td></td><td>RiC-RI061 results or resulted from <td>', ref(l(|RI061_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI062_|v2) > 0 then ('<tr><td></td><td>RiC-RI062 is associated with rule <td>', ref(l(|RI062_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI063_|v2) > 0 then ('<tr><td></td><td>RiC-RI063 is or was regulated by <td>', ref(l(|RI063_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI064_|v2) > 0 then ('<tr><td></td><td>RiC-RI064 expresses or expressed <td>', ref(l(|RI064_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI065_|v2) > 0 then ('<tr><td></td><td>RiC-RI065 is responsible for issuing <td>', ref(l(|RI065_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI066_|v2) > 0 then ('<tr><td></td><td>RiC-RI066 is or was responsible for enforcing <td>', ref(l(|RI066_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI067_|v2) > 0 then ('<tr><td></td><td>RiC-RI067 authorized by <td>', ref(l(|RI067_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI068_|v2) > 0 then ('<tr><td></td><td>RiC-RI068 is associated with date <td>', ref(l(|RI068_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI069_|v2) > 0 then ('<tr><td></td><td>RiC-RI069 has beginning date <td>', ref(l(|RI069_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI070_|v2) > 0 then ('<tr><td></td><td>RiC-RI070 has birth date <td>', ref(l(|RI070_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI071_|v2) > 0 then ('<tr><td></td><td>RiC-RI071 has end date <td>', ref(l(|RI071_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI072_|v2) > 0 then ('<tr><td></td><td>RiC-RI072 has death date <td>', ref(l(|RI072_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI073_|v2) > 0 then ('<tr><td></td><td>RiC-RI073 has modification date <td>', ref(l(|RI073_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI074_|v2) > 0 then ('<tr><td></td><td>RiC-RI074 is associated with place <td>', ref(l(|RI074_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI075_|v2) > 0 then ('<tr><td></td><td>RiC-RI075 has or had location <td>', ref(l(|RI075_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI076_|v2) > 0 then ('<tr><td></td><td>RiC-RI076 has or had jurisdiction <td>', ref(l(|RI076_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI077_|v2) > 0 then ('<tr><td></td><td>RiC-RI077 is or was adjacent to <td>', ref(l(|RI077_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI078_|v2) > 0 then ('<tr><td></td><td>RiC-RI078 overlaps or overlapped <td>', ref(l(|RI078_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI079_|v2) > 0 then ('<tr><td></td><td>RiC-RI079 is author of <td>', ref(l(|RI079_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI080_|v2) > 0 then ('<tr><td></td><td>RiC-RI080 has creation date <td>', ref(l(|RI080_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI081_|v2) > 0 then ('<tr><td></td><td>RiC-RI081 has or had all members with creation date <td>', ref(l(|RI081_|v2), @name.pft,), '***', '</td></tr>'/) fi
+	if npost(|RI082_|v2) > 0 then ('<tr><td></td><td>RiC-RI082 has or had some members with creation date <td>', ref(l(|RI082_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI083_|v2) > 0 then ('<tr><td></td><td>RiC-RI083 has or had most members with creation date <td>', ref(l(|RI083_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI084_|v2) > 0 then ('<tr><td></td><td>RiC-RI084 occurred at date <td>', ref(l(|RI084_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI085_|v2) > 0 then ('<tr><td></td><td>RiC-RI085 has within <td>', ref(l(|RI085_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+	if npost(|RI086_|v2) > 0 then ('<tr><td></td><td>RiC-RI086 intersects <td>', ref(l(|RI086_|v2), @name.pft,), '***', '</td></tr>'/) fi	
+
+  /*** Fichiers ***/
+	if p(v18) then '<tr><td colspan=3 bgcolor=DodgerBlue>Fichiers</td></tr>' fi
+	if p(v18) then '<tr><td>jjjjj</td><td colspan=2>', ('<a href="/docs/ric_cm/uploaded_files/', v18, '">', v128, '</a>', /), '</td></tr>' fi/
+
+  /*** Edition of record ***/
+	if p(v20) then '<tr><td colspan=3 bgcolor=MediumSeaGreen>Creator of the RiC-CM record</td></tr>' fi
+	if p(v20) then '<tr><td>RiC-CM record created by</td><td colspan=2>', ref(['acces']l(['acces']'LOG_',mpu, v20[1]^o),mpl, v10,' (',v20, ') '), 
+	s1:=(ref(['acces']l(['acces']'LOG_',mpu, v20[1]^o),mpl, v20)),
+	s2:=(ref(l('UID_',(s1)), v2)), 
+	'[', (s2), '] on ', v20[1]^d*6.2, '-', v20[1]^d*4.2, '-', v20[1]^d*0.4, mpl ' at ' v20[1]^d*9.8, '</td></tr>'/ fi
+	if nocc(v20) >= 2 then '<tr><td>RiC-CM record modified by</td><td colspan=2>', 
+	, ('<li>'ref(['acces']l(['acces']'LOG_',mpu, v20^o),mpl, v10,' (',v20, ') '), 
+	
+	s1:=(ref(['acces']l(['acces']'LOG_',mpu, v20^o),mpl, v20)),
+	s2:=(ref(l('UID_',s1), v2)),
+	
+	'[', s2, '] on ', v20^d*6.2, '-', v20^d*4.2, '-', v20^d*0.4, mpl ' at ' v20^d*9.8 '<br>'/), '</ol></td></tr>' fi/
+'<tr><td colspan=3 bgcolor=blue>'
+if p(v128) then '<tr><td colspan="2">TITLE:</td><td colspan="3" id="v2">'(v2,'<a href="/cgi-bin/ansi/wxis.exe/?IsisScript=xxx.xis" target=new>','(',f(npost('ECN_'v2),1,0),' other versions in our calatog)</a><br>') fi 
+'</td></tr>'
+
+if p(v245) then '<tr><td colspan="2">TITLE:</td><td colspan="3" id="v245">'if npost(['rda'],'TI_'v245^a)>1 then (v245^a,'<a href="/cgi-bin/wxis.exe/iah/scripts/?IsisScript=iah.xis&lang=en&base=rda&nextAction=lnk&exprSearch=',s(mpu,v245^a,mpl),'&indexSearch=TI" target=new>','(',f(npost(['rda'],'TI_'v245^a),1,0),' other versions in our calatog)</a><br>') else | |v245^1,| |v245^2,| |v245^a,| |v245^b,| |v245^c,| |v245^f,| |v245^g,| |v245^h,| |v245^k,| |v245^n,| |v245^p,| |v245^s, if iocc<>nocc(v245) then '<br>' fi/, fi,'</td></tr>' fi/
+
+'</table>'
+

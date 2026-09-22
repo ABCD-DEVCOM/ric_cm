@@ -1,0 +1,696 @@
+'
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+    :root {
+        --ric-navy-dark: #0f172a;        /* Bleu nuit très foncé */
+        --ric-navy-main: #1e293b;        /* Bleu marine principal (unifié pour tous les en-têtes) */
+        --ric-navy-light: #f8fafc;      /* Fond léger */
+        --ric-border: #cbd5e1;          /* Ligne / Bordure */
+        
+        --ric-yellow-accent: #f59e0b;   /* Jaune ambré / Doré principal */
+        --ric-yellow-light: #fef3c7;    /* Jaune très clair pour les badges */
+        --ric-yellow-text: #92400e;     /* Texte foncé sur fond jaune */
+        --ric-yellow-gold: #fbbf24;     /* Jaune vif pour les icônes */
+        
+        --texte: #334155;
+        --texte-doux: #64748b;
+        --surface: #ffffff;
+    }
+
+    .ric-wrap {
+        font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+        max-width: 1600px;
+        margin: 15px auto;
+        background: var(--surface);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+        border: 1px solid var(--ric-border);
+        color: var(--texte);
+    }
+
+    /* En-tête Principal Unifié (Bleu Marine & Jaune Doré) */
+    .ric-entete {
+        background: linear-gradient(135deg, var(--ric-navy-dark) 0%, var(--ric-navy-main) 100%);
+        color: #ffffff;
+        padding: 14px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--ric-yellow-accent);
+    }
+
+    .ric-entete-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .ric-entete-brand i {
+        color: var(--ric-yellow-gold);
+        font-size: 22px;
+    }
+
+    .ric-entete-titre {
+        font-size: 18px;
+        font-weight: 800;
+        color: #ffffff;
+    }
+
+    .ric-entete-sous {
+        font-size: 11.5px;
+        color: var(--ric-yellow-gold);
+        font-weight: 500;
+        opacity: 0.9;
+    }
+
+    /* Grille Paysage 2 Colonnes */
+    .ric-grid-landscape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--ric-border);
+    }
+
+    .ric-col-left {
+        border-right: 1px solid var(--ric-border);
+        background: var(--surface);
+        padding: 0;
+    }
+
+    .ric-col-right {
+        background: #fafafa;
+        padding: 0;
+    }
+
+    .ric-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+
+    .ric-table td {
+        padding: 8px 14px;
+        border-bottom: 1px solid var(--ric-border);
+        vertical-align: top;
+    }
+
+    .ric-table tr:hover td:not(.ric-section) {
+        background: var(--ric-navy-light);
+    }
+
+    /* Encadrement pour textes longs */
+    .ric-scrollable-content {
+        max-height: 250px;
+        overflow-y: auto;
+        padding-right: 6px;
+        line-height: 1.5;
+    }
+
+    .ric-scrollable-content::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .ric-scrollable-content::-webkit-scrollbar-thumb {
+        background: var(--ric-border);
+        border-radius: 4px;
+    }
+
+    /* Bandeaux de Section UNIFORMISÉS EN BLEU MARINE */
+    .ric-section {
+        background-color: var(--ric-navy-main) !important;
+        color: #ffffff !important;
+        padding: 9px 16px !important;
+        font-weight: 600 !important;
+        font-size: 11px !important;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        border-bottom: 2px solid var(--ric-yellow-accent) !important;
+    }
+
+    .ric-section i {
+        color: var(--ric-yellow-gold);
+        margin-right: 6px;
+    }
+
+    /* Zone Horizontale Basse : Fichiers & Logs */
+    .ric-bottom-panel {
+        background: var(--ric-navy-light);
+    }
+
+    .ric-file-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 16px;
+    }
+
+    .ric-file-card {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #ffffff;
+        border: 1px solid var(--ric-border);
+        padding: 6px 14px;
+        border-radius: 6px;
+        color: #0284c7;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 12.5px;
+    }
+
+    .ric-file-card i {
+        color: var(--ric-yellow-accent);
+    }
+
+    .ric-file-card:hover {
+        border-color: var(--ric-yellow-accent);
+        background: var(--ric-yellow-light);
+        color: var(--ric-yellow-text);
+    }
+
+    /* Traçabilité Horizon */
+    .ric-log-row {
+        padding: 10px 16px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .ric-log-label {
+        font-weight: 700;
+        color: var(--ric-navy-dark);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .ric-log-label i {
+        color: var(--ric-yellow-accent);
+    }
+
+    .ric-log-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--ric-yellow-light);
+        color: var(--ric-yellow-text);
+        border: 1px solid #fde68a;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 11.5px;
+        font-weight: 700;
+    }
+
+    .ric-log-date {
+        color: var(--texte-doux);
+        font-size: 12px;
+    }
+
+    .ric-signature-block {
+        text-align: right;
+        font-size: 0.72rem;
+        color: var(--ric-navy-main);
+        padding: 6px 16px;
+        background: var(--surface);
+        border-top: 1px solid var(--ric-border);
+    }
+
+    .ric-signature-block strong {
+        color: var(--ric-yellow-text);
+        background-color: var(--ric-yellow-light);
+        padding: 2px 6px;
+        border-radius: 3px;
+        border: 1px solid #fde68a;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="ric-wrap">
+        <!-- 1. EN-TÊTE PRINCIPAL (.ric-entete, .ric-entete-brand, .ric-entete-titre, .ric-entete-sous) -->
+        <div class="ric-entete">
+            <div class="ric-entete-brand">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <div class="ric-entete-titre">Notice descriptive</div>
+                    <div class="ric-entete-sous">Records in Contexts - Conceptual Model</div>
+                </div>
+            </div>
+            <div>
+                <span class="ric-log-badge"><i class="fa-solid fa-circle-check"></i>'
+		if p(v128[1]^f) then 
+			v128[1]^f, ' ', v128[1]^l 
+			if npost('RI070_',v2) > 0 and npost('RI072_',v2) > 0 then 
+				' (', ref(l('RI070_',v2), v129*6.4), ' -  ', ref(l('RI072_',v2), v129*6.4) ') ',
+			else
+				if npost('RI070_',v2) > 0 then 
+					' (', ref(l('RI070_',v2), v129*6.4), ' - )' 
+				fi 
+			fi  
+		else 
+			if p(v128[1]^o) then 
+				v128[1]^o
+				if npost('RI069_',v2) > 0 and npost('RI071_',v2) > 0 then 
+					' (', ref(l('RI069_',v2), v129*6.4), ' -  ', ref(l('RI071_',v2), v129*6.4) ') ',
+				else
+					if npost('RI069_',v2) > 0 then 
+						' (', ref(l('RI071_',v2), v129*6.4), ' - )' 
+					fi 
+				fi  
+			fi 
+		fi
+
+				'</span>
+            </div>
+        </div>
+
+        <!-- 2. GRILLE PAYSAGE 2 COLONNES (.ric-grid-landscape, .ric-col-left, .ric-col-right) -->
+        <div class="ric-grid-landscape">
+            
+            <!-- Colonne Gauche -->
+            <div class="ric-col-left">
+                <table class="ric-table">
+                    <!-- Bandeau de Section (.ric-section) -->
+                    <tr>
+                        <td colspan="2" class="ric-section">
+                            <i class="fa-solid fa-circle-info"></i> General informations
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 35%; font-weight: 600;">Entity type</td>
+                        <td>', 
+								select s(v1*0.7) 
+									case 'RiC-E03':	ref(['ric_msg']3, v1)
+									case 'RiC-E04': ref(['ric_msg']4, v1)
+									case 'RiC-E05': ref(['ric_msg']5, v1)
+									case 'RiC-E06': ref(['ric_msg']6, v1)
+									case 'RiC-E08': ref(['ric_msg']8, v1)
+									case 'RiC-E10': ref(['ric_msg']10, v1)
+									case 'RiC-E11': ref(['ric_msg']11, v1)
+									case 'RiC-E12': ref(['ric_msg']12, v1)
+									case 'RiC-E13': ref(['ric_msg']13, v1)
+									case 'RiC-E14': ref(['ric_msg']14, v1)
+									case 'RiC-E15': ref(['ric_msg']15, v1)
+									case 'RiC-E16': ref(['ric_msg']16, v1)
+									case 'RiC-E17': ref(['ric_msg']17, v1)
+									case 'RiC-E18': ref(['ric_msg']18, v1)
+									case 'RiC-E22': ref(['ric_msg']22, v1)
+								endsel										
+						,'</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 600;">Identification Number</td>
+                        <td>', v2, '</td>
+                    </tr>'
+            if p(v17) then       
+			        '<tr>
+                        <td style="font-weight: 600;">Kaywords</td>
+                        <td>', v17+| - |, '</td>
+                    </tr>'
+                 fi   
+                   ' <!-- Deuxième Section -->
+                    <tr>
+                        <td colspan="2" class="ric-section">
+                            <i class="fa-solid fa-file-lines"></i> Comprehensive description
+                        </td>
+                    </tr>'
+					
+            if p(v143) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']143, v1), '</td>
+						<td>', v143+|<p>|, '</td>
+                    </tr>'
+			fi
+            
+			if p(v122) then 			
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']122, v1), '</td>
+						<td>', 
+							if nocc(v122)=1 then 
+								if v122^u='Oui' then 
+									'<a href="',v122^i, '" target=New>', v122^i, '</a>', 
+								else, v122^i, 
+								fi 
+								' (<small>', v122^e,', ', v122^s, ', ', v122^c, ')' 
+							else if nocc(v122) <> 0 then
+								( '<ul><li>' 
+									if v122^u='Oui' then 
+										'<a href=" <small>',v122^i, '</small>" target=New> Accéder en ligne</a>', 
+									else '<small>' v122^i, fi, '</small> 
+										(', v122^e,', ', v122^s, ', ', v122^c, ')</li>' /	) 
+							fi fi  
+							'</ul>
+						</td>
+                    </tr>'
+				fi 
+            if p(v128) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']128, v1), '</td>
+						<td>', 
+		if p(v128[1]^f) then 
+			v128[1]^f, ' ', v128[1]^l 
+			if npost('RI070_',v2) > 0 and npost('RI072_',v2) > 0 then 
+				' (', ref(l('RI070_',v2), v129*6.4), ' -  ', ref(l('RI072_',v2), v129*6.4) ') ',
+			else
+				if npost('RI070_',v2) > 0 then 
+					' (', ref(l('RI070_',v2), v129*6.4), ' - )' 
+				fi 
+			fi  
+		else 
+			if p(v128[1]^o) then 
+				v128[1]^o
+				if npost('RI069_',v2) > 0 and npost('RI071_',v2) > 0 then 
+					' (', ref(l('RI069_',v2), v129*6.4), ' -  ', ref(l('RI071_',v2), v129*6.4) ') ',
+				else
+					if npost('RI069_',v2) > 0 then 
+						' (', ref(l('RI071_',v2), v129*6.4), ' - )' 
+					fi 
+				fi  
+			fi 
+		fi
+						'</td>
+                    </tr>'
+			fi
+			
+            if p(v101) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']101, v1), '</td>
+						<td>', v101, '</td>
+                    </tr>'
+			fi
+			
+            if p(v102) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']102, v1), '</td>
+						<td>', v102, '</td>
+                    </tr>'
+			fi
+
+            if p(v103) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']103, v1), '</td>
+						<td>', v103, '</td>
+                    </tr>'
+			fi
+			
+            if p(v104) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']104, v1), '</td>
+						<td>', v104, '</td>
+                    </tr>'
+			fi
+
+            if p(v105) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']105, v1), '</td>
+						<td>'(v105'<br>')'</td>
+                    </tr>'
+			fi
+
+            if p(v107) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']107, v1), '</td>
+						<td>'(v107'<br>')'</td>
+                    </tr>'
+			fi
+
+            if p(v108) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']108, v1), '</td>
+						<td>', v108, '</td>
+                    </tr>'
+			fi
+            if p(v109) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']109, v1), '<td>', v109, '</td>
+                    </tr>'
+			fi
+            if p(v110) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']110, v1), '</td>
+						<td>', (v110'<br>'), '</td>
+                    </tr>'
+			fi
+            if p(v111) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']111, v1), '<td>', v111, '</td>
+                    </tr>'
+			fi
+            if p(v112) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']112, v1), '<td>', v112, '</td>
+                    </tr>'
+			fi
+            if p(v113) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']113, v1), '</td>
+						<td>', v113, '</td>
+                    </tr>'
+			fi
+            if p(v115) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']115, v1), '</td>
+						<td>', ('Gender : ', v115^s ' - Nationality : ', v115^n '<br>' ), '</td>
+                    </tr>'
+			fi
+            if p(v117) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']117, v1), '</td>
+						<td>', v117+| - |, '</td>
+                    </tr>'
+			fi
+            if p(v118) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']118, v1), '<td>', v118, '</td>
+                    </tr>'
+			fi 
+
+            if p(v119) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']119, v1), '<td>', v119, '</td>
+                    </tr>'
+			fi
+
+            if p(v120) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']120, v1), '<td>', v120, '</td>
+                    </tr>'
+			fi
+
+            if p(v121) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']121, v1), '</td>
+						<td>', v121+|<p>|, '</td>
+                    </tr>'
+			fi
+
+            if p(v123) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']123, v1), '<td>', v123, '</td>
+                    </tr>'
+			fi
+
+            if p(v124) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']124, v1), '<td>', v124, '</td>
+                    </tr>'
+			fi
+
+            if p(v125) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']125, v1), '</td>
+						<td>', v125+|; |, '</td>
+                    </tr>'
+			fi
+
+            if p(v126) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']126, v1), '</td>
+						<td>', v126, '</td>
+                    </tr>'
+			fi
+
+            if p(v127) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']127, v1), '</td>
+						<td>', v127, '</td>
+                    </tr>'
+			fi
+
+            if p(v129) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']129, v1), '</td>
+						<td>', v129, '</td>
+                    </tr>'
+			fi
+
+            if p(v130) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']130, v1), '</td>
+						<td>', v130+| - |, '</td>
+                    </tr>'
+			fi
+
+            if p(v131) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']131, v1), '<td>', v131, '</td>
+                    </tr>'
+			fi
+
+            if p(v132) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']132, v1), '<td>', v132, '</td>
+                    </tr>'
+			fi
+
+            if p(v133) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']133, v1), '<td>', v133, '</td>
+                    </tr>'
+			fi
+
+            if p(v134) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']134, v1), '<td>', v134, '</td>
+                    </tr>'
+			fi
+
+            if p(v135) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']135, v1), '<td>', v135, '</td>
+                    </tr>'
+			fi
+
+            if p(v136) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']128, v1), '</td>
+						<td>', v136, '</td>
+                    </tr>'
+			fi
+
+            if p(v137) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']137, v1), '<td>', v137, '</td>
+                    </tr>'
+			fi
+
+            if p(v138) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']138, v1), '<td>', v138, '</td>
+                    </tr>'
+			fi
+
+            if p(v139) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']139, v1), '</td>
+						<td>', v139, '</td>
+                    </tr>'
+			fi
+
+            if p(v140) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']140, v1), '<td>', v140+|<p>|, '</td>
+                    </tr>'
+			fi
+
+            if p(v141) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']141, v1), '<td>', v141, '</td>
+                    </tr>'
+			fi
+
+            if p(v142) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']142, v1), '<td>', v142, '</td>
+                    </tr>'
+			fi
+
+            if p(v144) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']144, v1), '<td>', v144, '</td>
+                    </tr>'
+			fi
+			
+            if p(v145) then 
+					'<tr>
+                        <td class=ric-scrollable-content>', ref(['ric_msg']145, v1), '</td>
+						<td>', v145, '</td>
+                    </tr>'
+			fi
+                '</table>
+            </div>
+
+            <!-- Colonne Droite -->
+            <div class="ric-col-right">
+                <table class="ric-table">
+                    <!-- Bandeau de Section (.ric-section) -->
+                    <tr>
+                        <td colspan="3" class="ric-section">
+                            <i class="fa-solid fa-chart-line"></i> Relations
+                        </td>
+                    </tr>'
+					@relations_en.pft
+                    '
+                    <!-- Deuxième Section -->
+                    <tr>
+                        <td colspan="2" class="ric-section">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Inverse relations
+                        </td>
+                    </tr>'
+				@inverse_relations_en.pft
+                '</table>
+            </div>
+
+        </div>
+
+        <!-- 3. ZONE HORIZONTALE BASSE : FICHIERS & LOGS (.ric-bottom-panel, .ric-file-grid, .ric-file-card) -->
+        <div class="ric-bottom-panel">
+            <div class="ric-section" style="border-top: 1px solid var(--ric-border);">
+                <i class="fa-solid fa-folder-open"></i> Files
+            </div>
+            <div class="ric-file-grid">',
+                ('<a href="#" class="ric-file-card">
+                    <i class="fa-solid fa-file-pdf"></i>' v18
+                '</a>')
+
+            '</div>
+
+            <!-- 4. TRAÇABILITÉ HORIZON (.ric-log-row, .ric-log-label, .ric-log-badge, .ric-log-date) -->
+        <div class="ric-log-row" colspan=2>
+		<table border> 
+			<tr>
+				<td>
+						<div class="ric-log-label">
+							<i class="fa-solid fa-clock-rotate-left"></i> Record history
+						</div>
+				</td>
+			</tr>
+			<tr>
+				<td>				
+                    <div>
+					<span class="ric-log-badge">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </span>
+                   </div>
+				 </td>
+				 <td>
+				 </td>
+				 </tr>
+			<tr>
+				<td>
+                <div class="ric-log-date">
+                    
+                </div>
+				</td>
+            </div>
+       
+	</table>
+	 </div>
+	 
+    </div>
+'

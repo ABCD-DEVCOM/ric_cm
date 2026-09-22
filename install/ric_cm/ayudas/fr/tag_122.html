@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ABCD - RiC-CM database help file - tag 022</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding-top: 160px; 
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Barre d'onglets fixée en haut */
+    .tab-bar-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0f172a;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .tab-grid {
+      display: grid;
+      /* 5 colonnes de taille égale */
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 6px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Style des boutons d'onglets */
+    .tab-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #334155;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tab-grid a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Adaptabilité sur petits écrans */
+    @media (max-width: 900px) {
+      .tab-grid {
+        grid-template-columns: repeat(3, 1fr); /* Passe en 3 colonnes x 5 lignes sur tablette */
+      }
+      body {
+        padding-top: 220px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur mobile */
+      }
+      body {
+        padding-top: 450px;
+      }
+    }
+
+    /* Style des sections de contenu */
+    section {
+      min-height: 40vh;
+      padding: 24px;
+      margin: 16px auto;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      /* Ajustement du décalage pour ne pas masquer le titre lors du clic */
+      scroll-margin-top: 170px; 
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<section>
+<table border>
+	<tr>
+		<td bgcolor=#bdc3c7>ID</td>
+		<td><b>RiC-A022</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Name</b></td>
+		<td><b>Identifier</b></td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Definition</b></td>
+		<td>A word, number, letter, symbol, or any combination of these used to uniquely
+identify or reference an individual instance of an entity within a specific information
+domain.</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Domain</b></td>
+		<td>Thing</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Specifications</b></td>
+		<td> 
+           <p>Can include Global Persistent Identifiers (globally unique and persistently resolvable
+identifier for the entity) and/or Local Identifiers.</p>
+<p>Both the domain within which the identifier is unique, and the rules used in forming
+the identifier value should be provided with the identifier value.</p>
+        </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Extensibility</b></td>
+		<td>May be extended with any number of specific attributes.</td>
+	</tr>
+ 	<tr>
+		<td bgcolor=#bdc3c7><b>Repeatability</b></td>
+		<td>Repeatable</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Value schema</b></td>
+		<td>Rule-based value; model-based text; free text</td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Scope</b></td>
+		<td>
+            <p>Within a given domain (a closed system), identifiers are used to uniquely reference
+instances of an entity. Identifiers are instruments of control that facilitate
+management of the entities within the domain. The formulation of identifiers
+commonly is based on rules.</p>
+<p>In addition to an identifier needing to be unique within a domain, it is also highly
+desirable that it be persistent, that is, that the identifier uniquely identifies the entity
+over time. A variety of organizations provide rules for the formation of identifiers,
+and services designed to facilitate the persistence of identifiers. Such identifiers are
+commonly referred to as Persistent Identifiers (or PIDs). PIDs conform to RFC 3986,
+but impose additional rules. Common examples are Archival Resource Keys (ARKs)
+21
+and Digital Object Identifiers (DOIs).
+</p>
+<p>Within the global environment of the Internet, there are special rules for the
+formation of identifiers to ensure that they are unique within the domain of the
+Internet. Such identifiers must conform to the Internet Engineering Task Force (IETF)
+Uniform Resource Identifier rules (RFC 3986).
+</p>
+        </td>
+	</tr>
+	<tr>
+		<td bgcolor=#bdc3c7><b>Examples</b></td>
+		<td>
+            <u>Global Persistent Identifiers</u> <br>
+http://n2t.net/ark:/99166/w6v1266v [example of an Archival Resource Key for a <br>
+record] <br>
+http://n2t.net/ark:/99166/w6tz44ht [example of an Archival Resource Key for a <br>
+person] <br>
+http://isni.org/0000000073572182 [example of a persistent International Standard <br>
+Name Identifier for a person] <br>
+<u>Local identifiers</u> <br>
+BUD-01-F002 [example of a classification number from a corporate file plan] <br>
+NAS1/A/1.1 [example of a local identifier for a record] <br>
+F 1204 [example of a local identifier for a record set assigned by a repository] <br>
+<u>Shelfmark</u> <br>
+B-000091 [example of a unique identifier for an instantiation assigned by a <br>
+repository] <br>
+        </td>
+	</tr>
+</table>
+</section>
+</body>
+</html>
+ 
+

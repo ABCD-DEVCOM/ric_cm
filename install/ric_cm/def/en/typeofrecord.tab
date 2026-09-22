@@ -1,0 +1,16 @@
+1 
+recordset.fmt|RiC-E03||RiC-E03 Record Set
+record.fmt|RiC-E04||RiC-E04 Record
+recordpart.fmt|RiC-E05||RiC-E05 Record Part
+instantiation.fmt|RiC-E06||RiC-E06 Instantiation
+person.fmt|RiC-E08||RiC-E08 Person
+family.fmt|RiC-E10||RiC-E10 Family
+body.fmt|RiC-E11||RiC-E11 Corporate Body
+position.fmt|RiC-E12||RiC-E12 Position
+mechanism.fmt|RiC-E13||RiC-E13 Mechanism
+event.fmt|RiC-E14||RiC-E14 Event
+activity.fmt|RiC-E15||RiC-E15 Activity
+rule.fmt|RiC-E16||RiC-E16 Rule
+mandate.fmt|RiC-E17||RiC-E17 Mandate
+date.fmt|RiC-E18||RiC-E18 Date
+place.fmt|RiC-E22||RiC-E22 Place

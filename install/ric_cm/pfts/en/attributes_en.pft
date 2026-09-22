@@ -1,0 +1,38 @@
+'<tr><th colspan=4><font face=arial size=6 color=green>', @name_en.pft, '<br>', '<font size=2>', @ric_entity_en.pft, '</td></tr>'
+if p(v143) then '<tr><td>', ref(['ric_msg']143, v1), '</td><td colspan=3>', v143+|<p>|, '</td></tr>' fi/
+if p(v122) then '<tr><td>', ref(['ric_msg']122, v1), '</td><td colspan=3>', if nocc(v122)=1 then if v122^u='Oui' then '<a href="',v122^i, '" target=New>', v122^i, '</a>', else v122^i, fi ' (', v122^e,', ', v122^s, ', ', v122^c, ')' else ( '<li>' if v122^u='Oui' then '<a href="',v122^i, '" target=New>Acces in line</a>', else v122^i, fi, ' (', v122^e,', ', v122^s, ', ', v122^c, ')' /	) fi '</td></tr>' fi 
+if p(v103) then '<tr><td>', ref(['ric_msg']103, v1), '</td><td colspan=3>', v103+| - |, '</td></tr>' fi/
+if p(v104) and p(v105) then '<tr><td>', ref(['ric_msg']104, v1), '</td><td>', v104+| - |, '</td><td>', ref(['ric_msg']105, v1), '</td><td>', v105+| - |, else if p(v105) then '<tr><td>', ref(['ric_msg']105, v1), '</td><td>', v105+| - |, '</td><td></td><td></td></tr>' else if p(v105) then  '<tr><td></td><td></td><td>', ref(['ric_msg']105, v1), '</td><td>', v105, '</td></tr>' fi fi fi/
+if p(v107) and p(v110) then '<tr><td>', ref(['ric_msg']107, v1), '</td><td>', v107+| - |, '</td><td>', ref(['ric_msg']110, v1), '</td><td>', v110+| - |, else if p(v107) then '<tr><td>', ref(['ric_msg']107, v1), '</td><td>', v107+| - |, '</td><td></td><td></td></tr>' else if p(v110) then  '<tr><td></td><td></td><td>', ref(['ric_msg']110, v1), '</td><td>', v110, '</td></tr>' fi fi fi/
+if p(v108) and p(v109) then '<tr><td>', ref(['ric_msg']108, v1), '</td><td>', v108+| - |, '</td><td>', ref(['ric_msg']109, v1), '</td><td>', v109+| - |, else if p(v108) then '<tr><td>', ref(['ric_msg']109, v1), '</td><td>', v109+| - |, '</td><td></td><td></td></tr>' else if p(v109) then  '<tr><td></td><td></td><td>', ref(['ric_msg']109, v1), '</td><td>', v109, '</td></tr>' fi fi fi/
+if p(v118) then '<tr><td>', ref(['ric_msg']118, v1), '</td><td colspan=3>', v118+| - | '</td></tr>' fi/
+if p(v121) then '<tr><td>', ref(['ric_msg']121, v1), '</td><td colspan=3>', v121+|<p>| '</td></tr>' fi/
+if p(v102) then '<tr><td>', ref(['ric_msg']102, v1), '</td><td colspan=3>', v102 '</td></tr>' fi/
+if p(v123) then '<tr><td>', ref(['ric_msg']123, v1), '</td><td colspan=3>', v123 '</td></tr>' fi/
+if p(v124) then '<tr><td>', ref(['ric_msg']124, v1), '</td><td colspan=3>', v124+| - | '</td></tr>' fi/
+if p(v125) and p(v126) then '<tr><td>', ref(['ric_msg']125, v1), '</td><td>', v125+| - |, '</td><td>', ref(['ric_msg']126, v1), '</td><td>', v126+| - |, else if p(v125) then '<tr><td>', ref(['ric_msg']125, v1), '</td><td>', v125+| - |, '</td><td></td><td></td></tr>' else if p(v126) then  '<tr><td></td><td></td><td>', ref(['ric_msg']126, v1), '</td><td>', v126, '</td></tr>' fi fi fi/
+if p(v115) then '<tr><td>', ref(['ric_msg']115, v1), '</td><td colspan=3>', (if p(v115^s) then 'Gender : ', v115^s ' ' fi, if p(v115^n) then 'Nationality : ', v115^n ' ' fi/) '</td></tr>' fi/
+if p(v120) then '<tr><td>', ref(['ric_msg']120, v1), '</td><td colspan=3>', v120 '</td></tr>' fi/
+if p(v112) then '<tr><td>', ref(['ric_msg']112, v1), '</td><td colspan=3>', v112+ | - |, '</td></tr>' fi/
+if p(v130) then '<tr><td>', ref(['ric_msg']130, v1), '</td><td>', v130+| - | '</td></tr>' fi/
+if p(v131) then '<tr><td>', ref(['ric_msg']131, v1), '</td><td colspan=2>', v131 '</td></tr>' fi/if p(v133) then '<tr><td>', ref(['ric_msg']133, v1), '</td><td colspan=2>', v133 '</td></tr>' fi/
+if p(v134) then '<tr><td>', ref(['ric_msg']134, v1), '</td><td colspan=2>', v134 '</td></tr>' fi/
+if p(v135) then '<tr><td>', ref(['ric_msg']135, v1), '</td><td colspan=2>', v135+| - | '</td></tr>' fi/
+if p(v137) then '<tr><td>', ref(['ric_msg']137, v1), '</td><td colspan=3>', v137 '</td></tr>' fi/
+if p(v138) then '<tr><td>', ref(['ric_msg']138, v1), '</td><td colspan=2>', v138+| - | '</td></tr>' fi/
+if p(v139) then '<tr><td>', ref(['ric_msg']139, v1), '</td><td colspan=2>', v139+| - | '</td></tr>' fi/
+if p(v140) then '<tr><td>', ref(['ric_msg']140, v1), '</td><td colspan=3>', v140+| - | '</td></tr>' fi/
+if p(v101) then '<tr><td>', ref(['ric_msg']101, v1), '</td><td colspan=2>', v101+| - | '</td></tr>' fi/
+if p(v117) then '<tr><td>', ref(['ric_msg']117, v1), '</td><td colspan=2>', v117+| - | '</td></tr>' fi/
+if p(v136) then '<tr><td>', ref(['ric_msg']136, v1), '</td><td colspan=2>', v136 '</td></tr>' fi/
+if p(v141) then '<tr><td>', ref(['ric_msg']141, v1), '</td><td colspan=2>', v141 '</td></tr>' fi/
+if p(v145) then '<tr><td>', ref(['ric_msg']145, v1), '</td><td colspan=2>', v145 '</td></tr>' fi/
+if p(v144) then '<tr><td>', ref(['ric_msg']144, v1), '</td><td colspan=2>', v144 '</td></tr>' fi/
+if p(v113) then '<tr><td>', ref(['ric_msg']113, v1), '</td><td colspan=2>', v113 '</td></tr>' fi/
+if p(v142) then '<tr><td>', ref(['ric_msg']142, v1), '</td><td colspan=2>', v142 '</td></tr>' fi/
+if p(v119) then '<tr><td>', ref(['ric_msg']119, v1), '</td><td colspan=2>', v119 '</td></tr>' fi/
+if p(v129) then '<tr><td>', ref(['ric_msg']129, v1), '</td><td colspan=2>', v129 '</td></tr>' fi/
+if p(v111) then '<tr><td>', ref(['ric_msg']111, v1), '</td><td colspan=2>', v111 '</td></tr>' fi/
+if p(v127) then '<tr><td>', ref(['ric_msg']127, v1), '</td><td colspan=2>', v127 '</td></tr>' fi/
+if p(v132) then '<tr><td>', ref(['ric_msg']132, v1), '</td><td colspan=2>', v132 '</td></tr>' fi/
+if p(v17) then '<tr><td>keywords</td><td colspan=3>', v17+| - |, '</td></tr>' fi/

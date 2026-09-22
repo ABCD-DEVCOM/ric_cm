@@ -1,0 +1,14 @@
+select s(v18^e)
+	case 'docx' : '<img src="/content/plugins/ric_cm/assets/icons/docx.png" width="30" height="20">',
+	case 'image' : '<img src="/content/plugins/ric_cm/assets/icons/image.png" width="30" height="30">',
+	case 'html' : '<img src="/content/plugins/ric_cm/assets/icons/html.png">',
+	case 'odt' : '<img src="/content/plugins/ric_cm/assets/icons/odt.png">',
+	case 'pdf' : '<img src="/content/plugins/ric_cm/assets/icons/pdf.png" width="25" height="25">',
+	case 'pptx' : '<img src="/content/plugins/ric_cm/assets/icons/pptx.png">',
+	case 'txt' : '<img src="/content/plugins/ric_cm/assets/icons/txt.png">',
+	case 'xml' : '<img src="/content/plugins/ric_cm/assets/icons/xml.png">',
+	case 'xlsx' : '<img src="/content/plugins/ric_cm/assets/icons/xlsx.png" width="40" height="35">',
+	case 'doc' : '<img src="/content/plugins/ric_cm/assets/icons/docx.png" width="30" height="20">',
+	case 'xls' : '<img src="/content/plugins/ric_cm/assets/icons/xlsx.png" width="30" height="20">',
+/*** '<img src="/content/plugins/ric_cm/assets/icons/xlsx.png">' ***/
+endsel

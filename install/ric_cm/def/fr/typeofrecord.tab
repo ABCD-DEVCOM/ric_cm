@@ -1,0 +1,16 @@
+1 
+recordset.fmt|RiC-E03||RiC-E03 Ensemble d’objets informationnels
+record.fmt|RiC-E04||RiC-E04 Objet informationnel
+recordpart.fmt|RiC-E05||RiC-E05 Partie d’objet informationnel
+instantiation.fmt|RiC-E06||RiC-E06 Instanciation
+person.fmt|RiC-E08||RiC-E08 Personne
+family.fmt|RiC-E10||RiC-E10 Famille
+body.fmt|RiC-E11||RiC-E11 Collectivité
+position.fmt|RiC-E12||RiC-E12 Poste occupé
+mechanism.fmt|RiC-E13||RiC-E13 Système
+event.fmt|RiC-E14||RiC-E14 Evénement
+activity.fmt|RiC-E15||RiC-E15 Activité
+rule.fmt|RiC-E16||RiC-E16 Règle
+mandate.fmt|RiC-E17||RiC-E17 Mandat
+date.fmt|RiC-E18||RiC-E18 Date
+place.fmt|RiC-E22||RiC-E22 Lieu

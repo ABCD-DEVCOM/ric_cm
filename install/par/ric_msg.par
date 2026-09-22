@@ -1,0 +1,6 @@
+ric_msg.*=%path_database%ric_msg/data/ric_msg.*
+ric_msg.pft=%path_database%ric_msg/pfts/fr/ric_msg.pft
+prologoact.pft=%path_database%www/prologoact.pft
+epilogoact.pft=%path_database%www/epilogoact.pft
+isisac.tab=%path_database%isisac.tab
+isisuc.tab=%path_database%isisuc.tab

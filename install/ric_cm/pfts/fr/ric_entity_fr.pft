@@ -1,0 +1,22 @@
+'Type d entité : '
+s1:=('Numero didentification : ')
+
+select s(v1) 
+	case 'RiC-E03':	'Ensemble d’objets informationnels - ', s1, v2
+	case 'RiC-E04': 'Objet informationnel - ', s1, v2
+	case 'RiC-E05': 'Partie d’objet informationnel - ', s1, v2
+	case 'RiC-E06': 'Instanciation - ', s1, v2
+	case 'RiC-E08': 'Personne - ', s1, v2
+	case 'RiC-E10': 'Famille - ', s1, v2
+	case 'RiC-E11': 'Collectivité - ', s1, v2
+	case 'RiC-E12': 'Poste occupé - ', s1, v2
+	case 'RiC-E13': 'Systeme - ', s1, v2
+	case 'RiC-E14': 'Evénement - ', s1, v2
+	case 'RiC-E15': 'Activité - ', s1, v2
+	case 'RiC-E16': 'Regle - ', s1, v2
+	case 'RiC-E17': 'Mandat - ', s1, v2
+	case 'RiC-E18': 'Date - ', s1, v2
+	case 'RiC-E22': 'Lieu - ', s1, v2
+endsel 
+
+
