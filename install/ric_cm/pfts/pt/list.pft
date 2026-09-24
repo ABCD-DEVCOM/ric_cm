@@ -1,1 +1,1 @@
-mfn,'|',v1,'|',v128/
+mfn,'|',v1,'|',if p(v128) then v128 fi, if p(v122) then v122 fi/
